@@ -5,7 +5,7 @@
 //  Created by ISAAC DAVID SANTIAGO on 25/04/22.
 //
 
-import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
 

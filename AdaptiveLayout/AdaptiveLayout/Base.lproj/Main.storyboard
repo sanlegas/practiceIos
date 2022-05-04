@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kiari" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAG-K9-ObP">
+                                <rect key="frame" x="0.0" y="44" width="428" height="287"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="287" id="0YH-M1-ZKr"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0YH-M1-ZKr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="0YH-M1-ZKr"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBK-XF-Q75">
+                                <rect key="frame" x="164" y="346" width="100" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="Mc1-Bq-1dC"/>
+                                    <constraint firstAttribute="width" constant="272" id="uBd-St-SL0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="I LOVE YOU"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Mc1-Bq-1dC"/>
+                                        <exclude reference="uBd-St-SL0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Mc1-Bq-1dC"/>
+                                        <include reference="uBd-St-SL0"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lAG-K9-ObP" secondAttribute="bottom" id="11h-dq-UrL"/>
+                            <constraint firstItem="lAG-K9-ObP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1BV-YT-pzm"/>
+                            <constraint firstItem="lAG-K9-ObP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9fs-dB-i26"/>
+                            <constraint firstAttribute="trailing" secondItem="lAG-K9-ObP" secondAttribute="trailing" id="Klv-I9-7dO"/>
+                            <constraint firstItem="hBK-XF-Q75" firstAttribute="centerX" secondItem="lAG-K9-ObP" secondAttribute="centerX" id="SRf-7Z-A40"/>
+                            <constraint firstItem="lAG-K9-ObP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="X5G-dG-8tS"/>
+                            <constraint firstItem="lAG-K9-ObP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cYZ-Qm-ZTI"/>
+                            <constraint firstItem="lAG-K9-ObP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eq7-lp-c1r"/>
+                            <constraint firstItem="hBK-XF-Q75" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r58-VI-OrX"/>
+                            <constraint firstItem="hBK-XF-Q75" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sB6-Fg-qd6"/>
+                            <constraint firstItem="hBK-XF-Q75" firstAttribute="top" secondItem="lAG-K9-ObP" secondAttribute="bottom" constant="15" id="yh2-37-vqX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="11h-dq-UrL"/>
+                                <exclude reference="1BV-YT-pzm"/>
+                                <exclude reference="9fs-dB-i26"/>
+                                <exclude reference="Klv-I9-7dO"/>
+                                <exclude reference="X5G-dG-8tS"/>
+                                <exclude reference="cYZ-Qm-ZTI"/>
+                                <exclude reference="eq7-lp-c1r"/>
+                                <exclude reference="SRf-7Z-A40"/>
+                                <exclude reference="r58-VI-OrX"/>
+                                <exclude reference="sB6-Fg-qd6"/>
+                                <exclude reference="yh2-37-vqX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="11h-dq-UrL"/>
+                                <include reference="Klv-I9-7dO"/>
+                                <include reference="X5G-dG-8tS"/>
+                                <include reference="eq7-lp-c1r"/>
+                                <include reference="r58-VI-OrX"/>
+                                <include reference="sB6-Fg-qd6"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="1BV-YT-pzm"/>
+                                <include reference="9fs-dB-i26"/>
+                                <include reference="cYZ-Qm-ZTI"/>
+                                <include reference="SRf-7Z-A40"/>
+                                <include reference="yh2-37-vqX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="hBK-XF-Q75" id="owN-q6-gci"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15.420560747663551" y="62.850971922246224"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kiari" width="1024" height="768"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
