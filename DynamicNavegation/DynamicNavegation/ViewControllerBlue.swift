@@ -9,21 +9,29 @@ import UIKit
 
 class ViewControllerBlue: UIViewController {
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func NegroAction(_ sender: Any){
+        performSegue(withIdentifier: "DynamicSegue", sender: "negro")
     }
-    */
 
+    @IBAction func RosaAction(_ sender: Any) {
+        performSegue(withIdentifier: "DynamicSegue", sender: "rosa")
+    }
+    
+    @IBAction func AzulAction(_ sender: Any) {
+        performSegue(withIdentifier: "DynamicSegue", sender: "azul")
+    }
+    
+    override func prepare(for segue:UIStoryboardSegue, sender: Any?){
+        
+        if let destino = segue.destination as? ViewControllerDynamic{
+            destino.color = sender as? String
+        }
+    }
 }

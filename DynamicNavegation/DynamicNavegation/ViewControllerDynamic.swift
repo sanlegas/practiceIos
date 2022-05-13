@@ -9,21 +9,17 @@ import UIKit
 
 class ViewControllerDynamic: UIViewController {
 
+    var color:String?
+    var colores:[String:Any] = ["negro": UIColor.black, "rosa": UIColor.systemPink, "azul": UIColor.blue]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let colorUi = colores[color!] {
+            print("el color leido es " + color!)
+            self.view.backgroundColor = colorUi as? UIColor
+        }
+        
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "VCNegro"{
-            if let destino = segue.destination as? ViewControllerNegro{
+            if let destino = segue.destination as ? ViewControllerNegro{
                 destino.titulo = "negro"
             }
         }
