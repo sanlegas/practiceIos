@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="RemoteControl" customModuleProvider="target">
+            <connections>
+                <outlet property="iniciarSesionButton" destination="rsT-yr-JOF" id="DkU-hC-OmT"/>
+                <outlet property="passwordText" destination="gHo-bm-eeM" id="WBz-yD-sub"/>
+                <outlet property="usuarioText" destination="VEL-tk-EA4" id="A1U-lH-Exb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-dr-wnd">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwy-L8-Hzi">
+                            <rect key="frame" x="163" y="171" width="64" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iniciar Sesión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqA-cL-oEe">
+                            <rect key="frame" x="58.666666666666657" y="75" width="273" height="30"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VEL-tk-EA4" userLabel="usuario">
+                            <rect key="frame" x="58.666666666666657" y="208" width="273" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" textContentType="email"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JD-4T-sIW">
+                            <rect key="frame" x="151" y="282" width="88" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gHo-bm-eeM" userLabel="password">
+                            <rect key="frame" x="58.666666666666657" y="316" width="273" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsT-yr-JOF" userLabel="Iniciar" customClass="SSSpinnerButton" customModule="SSSpinnerButton" colorLabel="IBBuiltInLabel-Blue">
+                            <rect key="frame" x="140" y="454" width="110" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Iniciar Sesión"/>
+                            <connections>
+                                <action selector="iniciarSesionClick:" destination="-1" eventType="touchUpInside" id="f3o-ex-JUl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    <constraints>
+                        <constraint firstItem="Lwy-L8-Hzi" firstAttribute="top" secondItem="zqA-cL-oEe" secondAttribute="bottom" constant="66" id="9Bk-V3-wcM"/>
+                        <constraint firstItem="zqA-cL-oEe" firstAttribute="width" secondItem="gHo-bm-eeM" secondAttribute="width" id="HlE-2D-hE4"/>
+                        <constraint firstItem="rsT-yr-JOF" firstAttribute="top" secondItem="gHo-bm-eeM" secondAttribute="bottom" constant="104" id="Ig0-OU-LV9"/>
+                        <constraint firstItem="zqA-cL-oEe" firstAttribute="top" secondItem="eeE-dr-wnd" secondAttribute="top" constant="75" id="SMu-jD-E7l"/>
+                        <constraint firstItem="VEL-tk-EA4" firstAttribute="centerX" secondItem="eeE-dr-wnd" secondAttribute="centerX" id="SRz-Ap-19k"/>
+                        <constraint firstItem="VEL-tk-EA4" firstAttribute="width" secondItem="eeE-dr-wnd" secondAttribute="width" multiplier="0.7" id="gUb-aa-DA0"/>
+                        <constraint firstItem="zqA-cL-oEe" firstAttribute="centerX" secondItem="eeE-dr-wnd" secondAttribute="centerX" id="itJ-8q-UDl"/>
+                        <constraint firstItem="gHo-bm-eeM" firstAttribute="width" secondItem="eeE-dr-wnd" secondAttribute="width" multiplier="0.7" id="j6D-v4-x40"/>
+                        <constraint firstItem="gHo-bm-eeM" firstAttribute="centerX" secondItem="eeE-dr-wnd" secondAttribute="centerX" id="k4q-dv-nvk"/>
+                        <constraint firstItem="Lwy-L8-Hzi" firstAttribute="centerX" secondItem="eeE-dr-wnd" secondAttribute="centerX" id="qCu-zX-d7n"/>
+                        <constraint firstItem="1JD-4T-sIW" firstAttribute="top" secondItem="VEL-tk-EA4" secondAttribute="bottom" constant="40" id="qTo-U6-Kpq"/>
+                        <constraint firstItem="VEL-tk-EA4" firstAttribute="top" secondItem="Lwy-L8-Hzi" secondAttribute="bottom" constant="16" id="qVu-8f-PIn"/>
+                        <constraint firstItem="1JD-4T-sIW" firstAttribute="centerX" secondItem="eeE-dr-wnd" secondAttribute="centerX" id="uMo-NA-E3S"/>
+                        <constraint firstItem="rsT-yr-JOF" firstAttribute="centerX" secondItem="eeE-dr-wnd" secondAttribute="centerX" id="yX9-Xg-Wij"/>
+                        <constraint firstItem="gHo-bm-eeM" firstAttribute="top" secondItem="1JD-4T-sIW" secondAttribute="bottom" constant="13" id="yjy-On-aCy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eeE-dr-wnd" secondAttribute="bottom" id="7m8-O9-dEB"/>
+                <constraint firstItem="eeE-dr-wnd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="973-Py-kVs"/>
+                <constraint firstItem="eeE-dr-wnd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="frq-e6-iXD"/>
+                <constraint firstAttribute="trailing" secondItem="eeE-dr-wnd" secondAttribute="trailing" id="q4q-gF-Nhv"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="131.78410794602701"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
