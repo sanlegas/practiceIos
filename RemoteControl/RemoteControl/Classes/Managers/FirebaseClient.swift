@@ -7,13 +7,15 @@
 
 import Foundation
 import Firebase
+import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 class FirebaseClient{
-    var ref: DatabaseReference!
-    
+    var ref : Firestore!
+
     init(){
         print("inicializando clase FirebaseClient")
-        ref = Database.database().reference()
+        ref = Firestore.firestore()
     }
 
     func login(user:String ,
@@ -33,20 +35,24 @@ class FirebaseClient{
     func getDeviceById( id:String ,
                         success: @escaping (_ device: Device) -> () ,
                         failure: @escaping () -> ()) {
-        ref.child(FirebaseManager.shared.deviceById(id)).observeSingleEvent(of: .value, with:  { (snapshot)  in
-            guard let value = snapshot.value as? NSDictionary else {
-                failure()
-                return
-            }
-            value.setValue(id, forKey: "uid")
-            success(Device(doc:value))
-        })
         
+        let docRef = ref.collection("devices").document(id)
+
+        docRef.getDocument(as: Device.self) { (result) in
+            switch result {
+            case .success(let device):
+                success(device)
+            case .failure(let error):
+                failure()
+            }
+        }
+
     }
     
     func getDevicesByCurrentUser(
                           success: @escaping (_ devices: [Device]) -> (),
                           failure: @escaping () -> ()) {
+                              
                               var currentUser:String?
                               if Auth.auth().currentUser?.uid != nil {
                                   currentUser = Auth.auth().currentUser?.uid
@@ -58,36 +64,43 @@ class FirebaseClient{
                           }else{
                                  failure()
                           }
-
+                              
     }
     
     func getDevicesByUser(user: String,
                           success: @escaping (_ devices: [Device]) -> (),
                           failure: @escaping () -> ()) {
-        ref.child(FirebaseManager.shared.devicesByUser(user)).observeSingleEvent(of: .value, with: { (snapshot) in
-            var devices = [Device]()
-            guard let value = snapshot.value as? [String:String] else {
-                failure()
-                return
-            }
-            let group = DispatchGroup()
-            let devicesKey = value as? NSDictionary
-            
-            for item in devicesKey ?? [:] {
-                group.enter()
-                let idDevice : String = item.key as? String ?? ""
-                self.getDeviceById(id: idDevice) { device in
-                    devices.append(device)
-                    group.leave()
-                } failure: {
+        var devices = [Device]()
+        let group = DispatchGroup()
+
+        let docRef = ref.collection("users").document(user)
+        docRef.getDocument() { (document, err) in
+                if let document = document, document.exists {
+                    let value = document.data() as? NSDictionary
+                    let devicesKeys = value!["devices"] as? NSArray
+                    let objCArray = NSMutableArray(array: devicesKeys!)
+                    if let swiftArray = objCArray as NSArray as? [String] {
+                        for itemDeviceKey in swiftArray {
+                            group.enter()
+                            self.getDeviceById(id: itemDeviceKey) { device in
+                                devices.append(device)
+                                group.leave()
+                            } failure: {
+                                failure()
+                            }
+                        }
+                        group.notify(queue: .main){
+                            success(devices)
+                        }
+                    }else{
+                        failure()
+                    }
+                } else {
+                    print("Document does not exist")
                     failure()
                 }
-            }
-            group.notify(queue: .main){
-                success(devices)
-            }
-        })
-        
+        }
+
     }
 }
 

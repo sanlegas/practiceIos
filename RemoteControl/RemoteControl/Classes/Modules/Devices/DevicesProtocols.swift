@@ -12,8 +12,10 @@ import Foundation
 
 protocol ViewToPresenterDevicesProtocol: AnyObject{
     var view:PresenterToViewDevicesProtocol? {get set}
-    var interactor: PresenterToViewDevicesProtocol? {get set}
+    var interactor: PresenterToInteractorDevicesProtocol? {get set}
     var router: PresenterToRouterDevicesProtocol? {get set}
+    func redirectScrenDisplay()
+    func getDevicesByCurrentUser(success: @escaping (_ devices: [Device]) -> (), failure:@escaping() -> () )
 }
 
 protocol PresenterToViewDevicesProtocol:AnyObject {
@@ -25,9 +27,10 @@ protocol InteractorToPresenterDevicesProtocol: AnyObject {
 }
 
 protocol PresenterToInteractorDevicesProtocol: AnyObject{
-    
+    func getDevicesByCurrentUser(success: @escaping (_ devices: [Device]) -> (), failure:@escaping() -> () ) 
 }
 
 protocol PresenterToRouterDevicesProtocol: AnyObject{
-    
+    func redirecScreenView(on view: PresenterToViewDevicesProtocol)
+
 }

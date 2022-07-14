@@ -11,12 +11,12 @@
 import UIKit
 
 class DevicesRouter: PresenterToRouterDevicesProtocol {
-    
+
     weak var viewController: UIViewController?
     
     static func createModule() -> UIViewController {
 
-        let view = DevicesViewController(nibName: "devicesViewController", bundle: Bundle(for: DevicesRouter.self))
+        let view = DevicesViewController(nibName: "DevicesViewController", bundle: Bundle(for: DevicesRouter.self))
         
         let interactor = DevicesInteractor()
         let router = DevicesRouter()
@@ -27,7 +27,15 @@ class DevicesRouter: PresenterToRouterDevicesProtocol {
         view.presenter?.interactor = interactor
         view.presenter?.router = router
         
-        
         return view
     }
+    
+    func redirecScreenView(on view: PresenterToViewDevicesProtocol) {
+        let screenRouter = ScreenDisplayRouter.createModule()
+        let vc = view as! DevicesViewController
+        vc.navigationController?.pushViewController(screenRouter, animated: true)
+    }
+    
+    
+    
 }

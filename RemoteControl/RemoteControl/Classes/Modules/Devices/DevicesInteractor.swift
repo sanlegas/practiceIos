@@ -10,7 +10,16 @@
 
 import UIKit
 
-class DevicesInteractor: devicesInteractorProtocol {
+class DevicesInteractor: PresenterToInteractorDevicesProtocol {
+    let firebaseClient = FirebaseClient()
 
-    weak var presenter: devicesPresenterProtocol?
+    func getDevicesByCurrentUser(success: @escaping (_ devices: [Device]) -> (), failure:@escaping() -> () ) {
+        firebaseClient.getDevicesByCurrentUser { devices in
+            success(devices)
+        } failure: {
+            failure()
+        }
+
+    }
+    
 }

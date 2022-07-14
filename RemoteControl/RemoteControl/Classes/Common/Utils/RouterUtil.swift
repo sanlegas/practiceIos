@@ -15,12 +15,11 @@ class RouterUtil{
     static func getMainModule() -> UIViewController{
         if Auth.auth().currentUser?.uid != nil {
             print("usuario logueado")
-            return devicesRouter.createModule()
+            return DevicesRouter.createModule()
         }else{
             print("usuario NO logueado")
             return LoginRouter.createModule()
         }
     }
     
-   
 }

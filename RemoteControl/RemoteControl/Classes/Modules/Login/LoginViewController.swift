@@ -20,6 +20,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var iniciarSesionButton: SSSpinnerButton!
     var presenter: ViewToPresenterLoginProtocol?
     let labelButton = "Iniciar Sesión"
+
+    
     
     func showMessageError(){
         let uialert = UIAlertController(title: "Error al loguearse", message: "Los datos introducidos son incorrectos", preferredStyle: UIAlertController.Style.alert)

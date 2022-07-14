@@ -10,13 +10,4 @@ class FirebaseManager{
     
     static let shared = { FirebaseManager() }()
     
-    let devicesByUser = {
-        (user:String) -> String in
-        return "users/\(user)/devices"
-    }
-    
-    let deviceById = {
-        (id:String) -> String in
-        return "devices/\(id)"
-    }
 }

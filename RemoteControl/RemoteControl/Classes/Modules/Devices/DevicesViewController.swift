@@ -10,16 +10,65 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class DevicesViewController: UIViewController {
-    
+    var ref : Firestore?
     var presenter: ViewToPresenterDevicesProtocol?
+    @IBOutlet weak var tableDevicesView: UITableView!
+    
+    var devices: [Device]?
+    
+    override func viewDidAppear(_ animated: Bool) {
+        presenter?.getDevicesByCurrentUser(success: { devices in
+            self.devices = devices
+            print( self.devices)
+            self.tableDevicesView.reloadData()
+        }, failure: {
+            self.showMessage(_title: "Error", "Error al obtener los dispositivos")
+
+        })
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        ref = Firestore.firestore()
+        tableDevicesView.dataSource = self
+        tableDevicesView.delegate = self
+        tableDevicesView.register( UINib(nibName: "MyCustomCell", bundle: nil),
+                            forCellReuseIdentifier: "myCustomCell")
     }
     
+    func showMessage(_title: String,_ message: String){
+        let uialert = UIAlertController(title: title,
+                                                        message: message,
+                                                        preferredStyle: UIAlertController.Style.alert)
+            uialert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(uialert, animated: true, completion: nil)
+    }
+    
+    func leeRealTime(){
+        ref!.collection("devices").document("IRRZpMhrRB7wNHbXOiYS")
+            .parent.whereField("estatus", isEqualTo: 1)
+            .addSnapshotListener { documentSnapshot, error in
+                guard let snapshot = documentSnapshot else {
+                            print("Error fetching snapshots: \(error!)")
+                            return
+                        }
+                        snapshot.documentChanges.forEach { diff in
+                            if (diff.type == .added) {
+                                print("New city: \(diff.document.data())")
+                            }
+                            if (diff.type == .modified) {
+                                print("Modified city: \(diff.document.data())")
+                            }
+                            if (diff.type == .removed) {
+                                print("Removed city: \(diff.document.data())")
+                            }
+                        }
+              //self.showMessageUpdated()
+            }
+    }
 
     @IBAction func cerrarSesiom(_ sender: Any) {
         do {
@@ -28,4 +77,37 @@ class DevicesViewController: UIViewController {
           print("Error signing out: %@", signOutError)
         }
     }
+}
+
+extension DevicesViewController:PresenterToViewDevicesProtocol {
+    
+}
+
+extension DevicesViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //print("\(devices) ")
+        if let devices = devices {
+            print(devices.count)
+            return devices.count
+        }
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCustomCell", for: indexPath) as? MyCustomCellController
+        //cell?.device = devices![indexPath.row]
+        cell?.setDevice(device: devices![indexPath.row])
+       // cell?.nameLabel.text = devices![indexPath.row].name
+        print("\(cell?.nameLabel.text) device")
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("selected: \(indexPath.row)")
+        presenter?.redirectScrenDisplay()
+    }
+}
+
+extension DevicesViewController: UITableViewDelegate {
+    
 }

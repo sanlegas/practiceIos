@@ -35,8 +35,15 @@
 		7F27278E2861978900B7A294 /* DevicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2727882861978900B7A294 /* DevicesInteractor.swift */; };
 		7F27278F2861978900B7A294 /* DevicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2727892861978900B7A294 /* DevicesViewController.xib */; };
 		7F8157C4286A7E5E00E3DD50 /* RouterUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8157C3286A7E5E00E3DD50 /* RouterUtil.swift */; };
+		7FC03006287A56CC00345003 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FC03005287A56CC00345003 /* MyCustomCell.xib */; };
+		7FC03008287A576800345003 /* MyCustomCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC03007287A576800345003 /* MyCustomCellController.swift */; };
+		7FC0302B287CF7F800345003 /* ScreenDisplayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC03025287CF7F800345003 /* ScreenDisplayPresenter.swift */; };
+		7FC0302C287CF7F800345003 /* ScreenDisplayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC03026287CF7F800345003 /* ScreenDisplayRouter.swift */; };
+		7FC0302D287CF7F800345003 /* ScreenDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC03027287CF7F800345003 /* ScreenDisplayViewController.swift */; };
+		7FC0302E287CF7F800345003 /* ScreenDisplayProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC03028287CF7F800345003 /* ScreenDisplayProtocols.swift */; };
+		7FC0302F287CF7F800345003 /* ScreenDisplayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC03029287CF7F800345003 /* ScreenDisplayInteractor.swift */; };
+		7FC03030287CF7F800345003 /* ScreenDisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FC0302A287CF7F800345003 /* ScreenDisplayViewController.xib */; };
 		7FCB2F9F2864040D0002A7CA /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB2F9E2864040D0002A7CA /* Device.swift */; };
-		7FEF25AB2868F489002CE35C /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF25AA2868F489002CE35C /* FirebaseManager.swift */; };
 		7FEF25AD2868F849002CE35C /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF25AC2868F849002CE35C /* FirebaseClient.swift */; };
 		7FEF25C5286904FE002CE35C /* RemoteControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF25C4286904FE002CE35C /* RemoteControlTests.swift */; };
 		7FEF25CC286905F7002CE35C /* DevicesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF25CB286905F7002CE35C /* DevicesTest.swift */; };
@@ -87,8 +94,15 @@
 		7F2727882861978900B7A294 /* DevicesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesInteractor.swift; sourceTree = "<group>"; };
 		7F2727892861978900B7A294 /* DevicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevicesViewController.xib; sourceTree = "<group>"; };
 		7F8157C3286A7E5E00E3DD50 /* RouterUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterUtil.swift; sourceTree = "<group>"; };
+		7FC03005287A56CC00345003 /* MyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
+		7FC03007287A576800345003 /* MyCustomCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCellController.swift; sourceTree = "<group>"; };
+		7FC03025287CF7F800345003 /* ScreenDisplayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDisplayPresenter.swift; sourceTree = "<group>"; };
+		7FC03026287CF7F800345003 /* ScreenDisplayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDisplayRouter.swift; sourceTree = "<group>"; };
+		7FC03027287CF7F800345003 /* ScreenDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDisplayViewController.swift; sourceTree = "<group>"; };
+		7FC03028287CF7F800345003 /* ScreenDisplayProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDisplayProtocols.swift; sourceTree = "<group>"; };
+		7FC03029287CF7F800345003 /* ScreenDisplayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDisplayInteractor.swift; sourceTree = "<group>"; };
+		7FC0302A287CF7F800345003 /* ScreenDisplayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenDisplayViewController.xib; sourceTree = "<group>"; };
 		7FCB2F9E2864040D0002A7CA /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		7FEF25AA2868F489002CE35C /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		7FEF25AC2868F849002CE35C /* FirebaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
 		7FEF25C2286904FE002CE35C /* RemoteControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FEF25C4286904FE002CE35C /* RemoteControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlTests.swift; sourceTree = "<group>"; };
@@ -207,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				7F27277D28616BA300B7A294 /* App */,
+				7FC03024287CF6EC00345003 /* ScreenDisplay */,
 				7F272783286196F600B7A294 /* Devices */,
 				7F27278028616C6700B7A294 /* Login */,
 				7F27277F28616C4B00B7A294 /* Register */,
@@ -261,12 +276,12 @@
 		7F272783286196F600B7A294 /* Devices */ = {
 			isa = PBXGroup;
 			children = (
+				7FC02FFE287A55DC00345003 /* View */,
 				7F2727842861978900B7A294 /* DevicesPresenter.swift */,
 				7F2727852861978900B7A294 /* DevicesRouter.swift */,
 				7F2727862861978900B7A294 /* DevicesViewController.swift */,
 				7F2727872861978900B7A294 /* DevicesProtocols.swift */,
 				7F2727882861978900B7A294 /* DevicesInteractor.swift */,
-				7F2727892861978900B7A294 /* DevicesViewController.xib */,
 			);
 			path = Devices;
 			sourceTree = "<group>";
@@ -277,6 +292,29 @@
 				7F8157C3286A7E5E00E3DD50 /* RouterUtil.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7FC02FFE287A55DC00345003 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F2727892861978900B7A294 /* DevicesViewController.xib */,
+				7FC03005287A56CC00345003 /* MyCustomCell.xib */,
+				7FC03007287A576800345003 /* MyCustomCellController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FC03024287CF6EC00345003 /* ScreenDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				7FC03025287CF7F800345003 /* ScreenDisplayPresenter.swift */,
+				7FC03026287CF7F800345003 /* ScreenDisplayRouter.swift */,
+				7FC03027287CF7F800345003 /* ScreenDisplayViewController.swift */,
+				7FC03028287CF7F800345003 /* ScreenDisplayProtocols.swift */,
+				7FC03029287CF7F800345003 /* ScreenDisplayInteractor.swift */,
+				7FC0302A287CF7F800345003 /* ScreenDisplayViewController.xib */,
+			);
+			path = ScreenDisplay;
 			sourceTree = "<group>";
 		};
 		7FCB2F9C286403A90002A7CA /* Common */ = {
@@ -299,7 +337,6 @@
 		7FEF25A92868E172002CE35C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				7FEF25AA2868F489002CE35C /* FirebaseManager.swift */,
 				7FEF25AC2868F849002CE35C /* FirebaseClient.swift */,
 			);
 			path = Managers;
@@ -404,8 +441,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FC03030287CF7F800345003 /* ScreenDisplayViewController.xib in Resources */,
 				7F01857F285BE4A600915CD8 /* LoginViewController.xib in Resources */,
 				7F27277B286131D800B7A294 /* registerViewController.xib in Resources */,
+				7FC03006287A56CC00345003 /* MyCustomCell.xib in Resources */,
 				7F27278F2861978900B7A294 /* DevicesViewController.xib in Resources */,
 				7F01856A285BD67200915CD8 /* LaunchScreen.storyboard in Resources */,
 				7F018581285BE5CC00915CD8 /* GoogleService-Info.plist in Resources */,
@@ -495,6 +534,7 @@
 				7F272779286131D800B7A294 /* registerProtocols.swift in Sources */,
 				7F27278D2861978900B7A294 /* DevicesProtocols.swift in Sources */,
 				7F01857A285BE4A600915CD8 /* LoginPresenter.swift in Sources */,
+				7FC0302E287CF7F800345003 /* ScreenDisplayProtocols.swift in Sources */,
 				7F27278B2861978900B7A294 /* DevicesRouter.swift in Sources */,
 				7F018562285BD67100915CD8 /* ViewController.swift in Sources */,
 				7F27278E2861978900B7A294 /* DevicesInteractor.swift in Sources */,
@@ -503,16 +543,20 @@
 				7FEF25AD2868F849002CE35C /* FirebaseClient.swift in Sources */,
 				7F01857C285BE4A600915CD8 /* LoginViewController.swift in Sources */,
 				7F27278A2861978900B7A294 /* DevicesPresenter.swift in Sources */,
-				7FEF25AB2868F489002CE35C /* FirebaseManager.swift in Sources */,
+				7FC03008287A576800345003 /* MyCustomCellController.swift in Sources */,
+				7FC0302F287CF7F800345003 /* ScreenDisplayInteractor.swift in Sources */,
 				7F272778286131D800B7A294 /* registerViewController.swift in Sources */,
 				7F27278C2861978900B7A294 /* DevicesViewController.swift in Sources */,
 				7F01855E285BD67100915CD8 /* AppDelegate.swift in Sources */,
+				7FC0302D287CF7F800345003 /* ScreenDisplayViewController.swift in Sources */,
 				7F01857E285BE4A600915CD8 /* LoginInteractor.swift in Sources */,
 				7F01857D285BE4A600915CD8 /* LoginProtocols.swift in Sources */,
+				7FC0302C287CF7F800345003 /* ScreenDisplayRouter.swift in Sources */,
 				7F01857B285BE4A600915CD8 /* LoginRouter.swift in Sources */,
 				7F272776286131D800B7A294 /* registerPresenter.swift in Sources */,
 				7F018586285BE6E600915CD8 /* AuthFirebase.swift in Sources */,
 				7F272777286131D800B7A294 /* registerRouter.swift in Sources */,
+				7FC0302B287CF7F800345003 /* ScreenDisplayPresenter.swift in Sources */,
 				7F018560285BD67100915CD8 /* SceneDelegate.swift in Sources */,
 				7FCB2F9F2864040D0002A7CA /* Device.swift in Sources */,
 			);

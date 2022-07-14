@@ -11,14 +11,25 @@
 import UIKit
 
 class DevicesPresenter: ViewToPresenterDevicesProtocol {
+
+    
+
     var view: PresenterToViewDevicesProtocol?
     
-    var interactor: PresenterToViewDevicesProtocol?
+    var interactor: PresenterToInteractorDevicesProtocol?
     
     var router: PresenterToRouterDevicesProtocol?
     
-
-
+    func getDevicesByCurrentUser(success: @escaping ([Device]) -> (), failure: @escaping () -> ()) {
+        interactor?.getDevicesByCurrentUser(success: { devices in
+            success(devices)
+        }, failure: {
+            failure()
+        })
+    }
+    func redirectScrenDisplay() {
+        router?.redirecScreenView(on: view!)
+    }
 }
 
 extension DevicesPresenter: InteractorToPresenterDevicesProtocol{
