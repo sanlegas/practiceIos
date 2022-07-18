@@ -10,5 +10,27 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "closure #1 in FirebaseClient.handleScreenDevice(deviceId:lastUpdated:success:failure:):FirebaseClient.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "documentSnapshot.documents">
+            </PersistentString>
+            <PersistentString
+               value = "deviceId">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ScreenDisplayViewController.viewDidLoad():ScreenDisplayViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.lastUpdated">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in FirebaseClient.getDeviceById(id:success:failure:):FirebaseClient.swift">
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

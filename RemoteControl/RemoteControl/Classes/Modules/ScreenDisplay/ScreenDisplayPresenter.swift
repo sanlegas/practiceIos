@@ -10,11 +10,33 @@
 
 import UIKit
 
-class ScreenDisplayPresenter: ScreenDisplayPresenterProtocol, ScreenDisplayInteractorOutputProtocol {
-
-    weak private var view: ScreenDisplayViewProtocol?
-    var interactor: ScreenDisplayInteractorInputProtocol?
-    var router: ScreenDisplayWireframeProtocol?
+class ScreenDisplayPresenter: ViewToPresenterScreenDisplayProtocol {
 
 
+    var view: PresenterToViewScreenDisplayProtocol?
+    var interactor: PresenterToInteractorScreenDisplayProtocol?
+    var router: PresenterToRouterScreenDisplayProtocol?
+    
+    func getScreenFromIdDevice(idDevice:String,
+                               success: @escaping(_ screen: Data) -> () ,
+                               failure: @escaping() -> ()){
+        interactor?.getScreenFromIdDevice(idDevice: idDevice, success: { Data in
+            success(Data)
+        }, failure: {
+            failure()
+        })
+    }
+    
+    func handleScreenDevice(deviceId: String, lastUpdated: Any, success: @escaping (Data) -> (), failure: @escaping () -> ()) {
+        interactor?.handleScreenDevice(deviceId: deviceId, lastUpdated: lastUpdated, success: { screenCapture in
+            success(screenCapture)
+        }, failure: {
+            failure()
+        })
+    }
+    
+}
+
+extension ScreenDisplayPresenter: InteractorToPresenterScreenDisplayProtocol {
+    
 }

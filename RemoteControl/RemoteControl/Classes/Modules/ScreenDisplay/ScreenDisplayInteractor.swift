@@ -10,7 +10,31 @@
 
 import UIKit
 
-class ScreenDisplayInteractor: ScreenDisplayInteractorInputProtocol {
+class ScreenDisplayInteractor: PresenterToInteractorScreenDisplayProtocol {
 
-    weak var presenter: ScreenDisplayInteractorOutputProtocol?
+    
+    var presenter: InteractorToPresenterScreenDisplayProtocol?
+    let firebaseClient = FirebaseClient()
+
+    func getScreenFromIdDevice(idDevice:String,
+                               success: @escaping(_ screen: Data) -> () ,
+                               failure: @escaping() -> ()){
+        firebaseClient.getScreenFromIdDevice(idDevice: idDevice) { screen in
+            success(screen)
+        } failure: {
+            failure()
+        }
+
+    }
+    
+    
+    func handleScreenDevice(deviceId: String, lastUpdated: Any, success: @escaping (Data) -> (), failure: @escaping () -> ()) {
+        firebaseClient.handleScreenDevice(deviceId: deviceId, lastUpdated: lastUpdated) { screenCapture in
+            success(screenCapture)
+        } failure: {
+            failure()
+        }
+
+    }
+    
 }

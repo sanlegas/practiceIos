@@ -22,9 +22,12 @@ class DevicesTest: XCTestCase {
     }
     
     func testDeviceById(){
-        let computer = "computer1"
+        let computer = "computer2"
         let expectation = expectation(description: "getting device from firebasee")
 
+        let uuid = UIDevice.current.identifierForVendor!.uuidString
+
+        
         firebaseCliente.getDeviceById(id: computer) { device in
             print("device",device)
             XCTAssertTrue(device != nil)
@@ -37,6 +40,24 @@ class DevicesTest: XCTestCase {
         }
     }
 
+    func testScreenByDevice(){
+        let deviceId = "computer1"
+        let expectation = expectation(description: "getting screen from firebase")
+        
+        firebaseCliente.getScreenFromIdDevice(idDevice: deviceId) { screen in
+            print(screen)
+            XCTAssertTrue(screen != nil)
+            expectation.fulfill()
+        } failure: {
+            print("Error al obtener el screen")
+        }
+        waitForExpectations(timeout: 15) { error in
+              if let error = error {
+                XCTFail("waitForExpectationsWithTimeout errored: \(error)")
+              }
+        }
+    }
+    
     func testDevicesByUser()  {
         let user = "7u4i3N3dn6PKGxGVGmPhqykgkTz1"
         let expectation = expectation(description: "getting devices from firebasee")

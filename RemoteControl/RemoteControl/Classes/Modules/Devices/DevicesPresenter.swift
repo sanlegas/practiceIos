@@ -12,8 +12,6 @@ import UIKit
 
 class DevicesPresenter: ViewToPresenterDevicesProtocol {
 
-    
-
     var view: PresenterToViewDevicesProtocol?
     
     var interactor: PresenterToInteractorDevicesProtocol?
@@ -27,8 +25,9 @@ class DevicesPresenter: ViewToPresenterDevicesProtocol {
             failure()
         })
     }
-    func redirectScrenDisplay() {
-        router?.redirecScreenView(on: view!)
+    
+    func redirectScrenDisplay(with device: Device){
+        router?.redirecScreenView(on: view!, with: device)
     }
 }
 

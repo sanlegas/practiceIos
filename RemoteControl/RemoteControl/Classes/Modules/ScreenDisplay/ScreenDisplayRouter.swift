@@ -10,23 +10,26 @@
 
 import UIKit
 
-class ScreenDisplayRouter: ScreenDisplayWireframeProtocol {
+class ScreenDisplayRouter: PresenterToRouterScreenDisplayProtocol {
 
     weak var viewController: UIViewController?
 
-    static func createModule() -> UIViewController {
+    static func createModule(with device: Device) -> UIViewController {
         // Change to get view from storyboard if not using progammatic UI
         //let view = ScreenDisplayViewController(nibName: nil, bundle: nil)
         let view = ScreenDisplayViewController(nibName: "ScreenDisplayViewController", bundle: Bundle(for: ScreenDisplayRouter.self))
 
         let interactor = ScreenDisplayInteractor()
         let router = ScreenDisplayRouter()
-        let presenter: ScreenDisplayPresenterProtocol & ScreenDisplayInteractorOutputProtocol = ScreenDisplayPresenter()
+        let presenter: ViewToPresenterScreenDisplayProtocol & InteractorToPresenterScreenDisplayProtocol = ScreenDisplayPresenter()
 
+        view.deviceId = device.uid
+        view.lastUpdated = device.lastUpdate
         view.presenter = presenter
-        interactor.presenter = presenter
-        router.viewController = view
-
+        view.presenter?.view = view
+        view.presenter?.interactor = interactor
+        view.presenter?.router = router
+        
         return view
     }
     

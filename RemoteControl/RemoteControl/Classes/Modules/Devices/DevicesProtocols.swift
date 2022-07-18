@@ -14,7 +14,7 @@ protocol ViewToPresenterDevicesProtocol: AnyObject{
     var view:PresenterToViewDevicesProtocol? {get set}
     var interactor: PresenterToInteractorDevicesProtocol? {get set}
     var router: PresenterToRouterDevicesProtocol? {get set}
-    func redirectScrenDisplay()
+    func redirectScrenDisplay(with device: Device)
     func getDevicesByCurrentUser(success: @escaping (_ devices: [Device]) -> (), failure:@escaping() -> () )
 }
 
@@ -31,6 +31,6 @@ protocol PresenterToInteractorDevicesProtocol: AnyObject{
 }
 
 protocol PresenterToRouterDevicesProtocol: AnyObject{
-    func redirecScreenView(on view: PresenterToViewDevicesProtocol)
+    func redirecScreenView(on view: PresenterToViewDevicesProtocol,with device: Device)
 
 }

@@ -30,8 +30,8 @@ class DevicesRouter: PresenterToRouterDevicesProtocol {
         return view
     }
     
-    func redirecScreenView(on view: PresenterToViewDevicesProtocol) {
-        let screenRouter = ScreenDisplayRouter.createModule()
+    func redirecScreenView(on view: PresenterToViewDevicesProtocol,with device: Device) {
+        let screenRouter = ScreenDisplayRouter.createModule(with: device)
         let vc = view as! DevicesViewController
         vc.navigationController?.pushViewController(screenRouter, animated: true)
     }

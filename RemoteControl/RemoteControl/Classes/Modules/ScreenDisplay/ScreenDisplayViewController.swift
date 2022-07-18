@@ -10,20 +10,45 @@
 
 import UIKit
 
-class ScreenDisplayViewController: UIViewController, ScreenDisplayViewProtocol {
+class ScreenDisplayViewController: UIViewController {
 
-	var presenter: ScreenDisplayPresenterProtocol?
-
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var imageScreen: UIImageView!
+    var presenter: ViewToPresenterScreenDisplayProtocol?
+    var deviceId:   String?
+    var lastUpdated: Any?
+    
 	override func viewDidLoad() {
         super.viewDidLoad()
         self.modalPresentationStyle = .fullScreen
         
         let value = UIInterfaceOrientation.landscapeLeft.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
+        
+        presenter?.getScreenFromIdDevice(idDevice: deviceId!, success: { screen in
+            self.imageScreen.image = UIImage(data: screen)
+            
+            self.presenter?.handleScreenDevice(deviceId: self.deviceId!, lastUpdated: self.lastUpdated, success: { Data in
+                self.imageScreen.image = UIImage(data: Data)
+            }, failure: {
+                print("failure")
+            })
+        }, failure: {
+            print("Error al obtener la pantalla del dispositivo")
+        })
+    
     }
     
     override var shouldAutorotate: Bool {
         return true
     }
 
+    @objc func swipedUp(){
+        //print("swipedUp")
+    }
+    
+}
+
+extension ScreenDisplayViewController: PresenterToViewScreenDisplayProtocol{
+    
 }

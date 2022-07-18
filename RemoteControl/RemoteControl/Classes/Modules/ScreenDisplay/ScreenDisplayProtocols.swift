@@ -11,32 +11,43 @@
 import Foundation
 
 //MARK: Wireframe -
-protocol ScreenDisplayWireframeProtocol: class {
-
+protocol ViewToPresenterScreenDisplayProtocol: class {
+    var view: PresenterToViewScreenDisplayProtocol? {get set}
+    var interactor: PresenterToInteractorScreenDisplayProtocol? {get set}
+    var router: PresenterToRouterScreenDisplayProtocol? {get set}
+    func getScreenFromIdDevice(idDevice:String,
+                               success: @escaping(_ screen: Data) -> () ,
+                               failure: @escaping() -> ())
+    func handleScreenDevice(deviceId: String, lastUpdated: Any, success: @escaping (Data) -> (), failure: @escaping () -> ())
 }
 //MARK: Presenter -
-protocol ScreenDisplayPresenterProtocol: class {
+protocol PresenterToViewScreenDisplayProtocol: class {
 
-    var interactor: ScreenDisplayInteractorInputProtocol? { get set }
+  
 }
 
 //MARK: Interactor -
-protocol ScreenDisplayInteractorOutputProtocol: class {
+protocol InteractorToPresenterScreenDisplayProtocol: class {
 
     /* Interactor -> Presenter */
 }
 
-protocol ScreenDisplayInteractorInputProtocol: class {
+protocol PresenterToInteractorScreenDisplayProtocol: class {
+    var presenter : InteractorToPresenterScreenDisplayProtocol? { get set}
 
-    var presenter: ScreenDisplayInteractorOutputProtocol?  { get set }
-
-    /* Presenter -> Interactor */
+    func getScreenFromIdDevice(idDevice:String,
+                               success: @escaping(_ screen: Data) -> () ,
+                               failure: @escaping() -> ())
+    
+    func handleScreenDevice(deviceId: String,
+                            lastUpdated: Any,
+                            success: @escaping (_ screenCapture: Data) -> (),
+                            failure: @escaping () -> ())
 }
 
 //MARK: View -
-protocol ScreenDisplayViewProtocol: class {
+protocol PresenterToRouterScreenDisplayProtocol: class {
 
-    var presenter: ScreenDisplayPresenterProtocol?  { get set }
 
     /* Presenter -> ViewController */
 }

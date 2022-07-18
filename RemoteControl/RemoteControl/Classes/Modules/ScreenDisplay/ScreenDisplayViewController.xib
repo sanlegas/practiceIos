@@ -1,35 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina6_0" orientation="landscape" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScreenDisplayViewController">
             <connections>
+                <outlet property="imageScreen" destination="VbB-Z2-0wR" id="7Yf-H7-yGf"/>
+                <outlet property="scrollView" destination="Gae-ty-h30" id="jg2-3L-bkd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHX-hI-ybE">
-                    <rect key="frame" x="378" y="184.66666666666666" width="88" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gae-ty-h30">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Byi-Qb-O9F">
+                            <rect key="frame" x="0.0" y="0.0" width="1300" height="1300"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0q-Ox-yPo" userLabel="StackHorizontal">
+                                    <rect key="frame" x="0.0" y="0.0" width="1300" height="1300"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VbB-Z2-0wR" userLabel="ScreenCapture">
+                                            <rect key="frame" x="0.0" y="0.0" width="1300" height="1300"/>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1300" id="dUz-KA-ijw"/>
+                                                <constraint firstAttribute="width" constant="1300" id="tsc-Kh-Zbg"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <gestureRecognizers/>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Byi-Qb-O9F" secondAttribute="bottom" id="SGF-SE-hiQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Byi-Qb-O9F" secondAttribute="trailing" id="ZLp-0h-dF2"/>
+                        <constraint firstItem="Byi-Qb-O9F" firstAttribute="height" secondItem="Gae-ty-h30" secondAttribute="height" priority="250" id="mh4-wC-pF2"/>
+                        <constraint firstItem="Byi-Qb-O9F" firstAttribute="top" secondItem="Gae-ty-h30" secondAttribute="top" id="t9m-4b-7zO"/>
+                        <constraint firstItem="Byi-Qb-O9F" firstAttribute="leading" secondItem="Gae-ty-h30" secondAttribute="leading" id="tQq-5c-hkk"/>
+                        <constraint firstItem="Byi-Qb-O9F" firstAttribute="width" secondItem="Gae-ty-h30" secondAttribute="width" priority="250" id="yJH-nN-5uA"/>
+                    </constraints>
+                </scrollView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="Jb8-h1-hRk"/>
             <color key="backgroundColor" name="AccentColor"/>
+            <gestureRecognizers/>
             <constraints>
-                <constraint firstItem="OHX-hI-ybE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Hxy-kh-tzu"/>
-                <constraint firstItem="OHX-hI-ybE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iX5-xQ-CjP"/>
+                <constraint firstAttribute="top" secondItem="Gae-ty-h30" secondAttribute="top" id="5Qx-Uo-nIA"/>
+                <constraint firstAttribute="bottom" secondItem="Gae-ty-h30" secondAttribute="bottom" id="6CF-Dz-Jtn"/>
+                <constraint firstItem="Jb8-h1-hRk" firstAttribute="trailing" secondItem="Gae-ty-h30" secondAttribute="trailing" id="Dh8-oA-ODl"/>
+                <constraint firstItem="Gae-ty-h30" firstAttribute="leading" secondItem="Jb8-h1-hRk" secondAttribute="leading" id="zOA-zp-bD8"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="79"/>
+            <point key="canvasLocation" x="130.76923076923077" y="78.199052132701425"/>
         </view>
     </objects>
     <resources>

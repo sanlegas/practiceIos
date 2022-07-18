@@ -104,7 +104,7 @@ extension DevicesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("selected: \(indexPath.row)")
-        presenter?.redirectScrenDisplay()
+        presenter?.redirectScrenDisplay(with: devices![indexPath.row])
     }
 }
 

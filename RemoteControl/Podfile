@@ -5,13 +5,14 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'RemoteControl' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'Firebase/Storage'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift', '> 7.0-beta'
   pod 'Firebase/Auth'
   pod 'SSSpinnerButton'
-  
+  pod 'CodableFirebase'
   # Pods for RemoteControl
 
   target 'RemoteControlTests' do

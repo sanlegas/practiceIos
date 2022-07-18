@@ -9,15 +9,35 @@ import Foundation
 import Firebase
 import FirebaseFirestore
 import FirebaseFirestoreSwift
+import FirebaseStorage
 
 class FirebaseClient{
-    var ref : Firestore!
-
+    let ref : Firestore!
+    let storageRef: StorageReference
+    
+    
+    
     init(){
         print("inicializando clase FirebaseClient")
         ref = Firestore.firestore()
+        storageRef = Storage.storage().reference()
     }
 
+    func getScreenFromIdDevice(idDevice:String,
+                               success: @escaping(_ screen: Data) -> () ,
+                               failure: @escaping() -> ()
+    ){
+        let pathReference = storageRef.child( "\(idDevice).png")
+        pathReference.getData(maxSize: 3 * 1024 * 1024) { data, error in
+            if let error = error {
+                print("Hubo un error", error)
+                failure()
+            }else {
+                success(data!)
+            }
+        }
+    }
+    
     func login(user:String ,
                     password:String ,
                     success: @escaping() -> () ,
@@ -102,6 +122,30 @@ class FirebaseClient{
         }
 
     }
+    
+    func handleScreenDevice(deviceId: String,
+                            lastUpdated: Any,
+                            success: @escaping (_ screenCapture: Data) -> (),
+                            failure: @escaping () -> ()){
+       
+        let timeDate    = Timestamp()
+        
+        ref!.collection("devices").document(deviceId)
+            .parent.whereField("lastUpdate", isGreaterThanOrEqualTo: timeDate)
+            .addSnapshotListener { documentSnapshot, error in
+                print("posibles cambios en el screen \(deviceId) \(lastUpdated)")
+                guard let snapshot = documentSnapshot else {
+                            print("Error fetching snapshots: \(error!)")
+                            return
+                }
+                self.getScreenFromIdDevice(idDevice: deviceId) { screen in
+                    success(screen)
+                } failure: {
+                    failure()
+                }
+            }
+    }
+    
 }
 
 
