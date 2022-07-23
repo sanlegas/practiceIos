@@ -13,6 +13,7 @@ import UIKit
 class ScreenDisplayPresenter: ViewToPresenterScreenDisplayProtocol {
 
 
+
     var view: PresenterToViewScreenDisplayProtocol?
     var interactor: PresenterToInteractorScreenDisplayProtocol?
     var router: PresenterToRouterScreenDisplayProtocol?
@@ -26,6 +27,15 @@ class ScreenDisplayPresenter: ViewToPresenterScreenDisplayProtocol {
             failure()
         })
     }
+    
+    func updatePointByDevice(idDevice: String, x: Int, y: Int, success: @escaping () -> (), failure: @escaping () -> ()) {
+        interactor?.updatePointByDevice(idDevice: idDevice, x: x, y: y, success: {
+            success()
+        }, failure: {
+            failure()
+        })
+    }
+    
     
     func handleScreenDevice(deviceId: String, lastUpdated: Any, success: @escaping (Data) -> (), failure: @escaping () -> ()) {
         interactor?.handleScreenDevice(deviceId: deviceId, lastUpdated: lastUpdated, success: { screenCapture in

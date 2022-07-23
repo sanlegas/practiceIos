@@ -17,19 +17,51 @@ class ScreenDisplayViewController: UIViewController {
     var presenter: ViewToPresenterScreenDisplayProtocol?
     var deviceId:   String?
     var lastUpdated: Any?
+    var observerRotate: Any?
     
-	override func viewDidLoad() {
-        super.viewDidLoad()
-        self.modalPresentationStyle = .fullScreen
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var widthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet var superView: UIView!
         
-        let value = UIInterfaceOrientation.landscapeLeft.rawValue
+    override func viewDidAppear(_ animated: Bool) {
+        print("didAppear")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        superView.bringSubviewToFront(closeButton)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapScreen))
+        self.imageScreen.addGestureRecognizer(tap)
+        self.modalPresentationStyle = .fullScreen
+        let value = UIInterfaceOrientation.landscapeRight.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
         
+        observerRotate = NotificationCenter.default.addObserver(self, selector: #selector(self.rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+
+        handleScreen()
+        
+    }
+    
+    @objc func rotated() {
+        if UIDevice.current.orientation.isLandscape {
+            print("Landscape")
+        } else {
+            print("Portrait")
+            let value = UIInterfaceOrientation.landscapeLeft.rawValue
+            UIDevice.current.setValue(value, forKey: "orientation")
+        }
+    }
+    
+    private func handleScreen(){
         presenter?.getScreenFromIdDevice(idDevice: deviceId!, success: { screen in
             self.imageScreen.image = UIImage(data: screen)
-            
-            self.presenter?.handleScreenDevice(deviceId: self.deviceId!, lastUpdated: self.lastUpdated, success: { Data in
-                self.imageScreen.image = UIImage(data: Data)
+            self.presenter?.handleScreenDevice(deviceId: self.deviceId!, lastUpdated: self.lastUpdated, success: { [self] Data in
+                let image = UIImage(data: Data)
+                self.heightConstraint.constant = image?.size.height ?? 0
+                self.widthConstraint.constant = image?.size.width ??  0
+                self.imageScreen.image = image
             }, failure: {
                 print("failure")
             })
@@ -39,16 +71,24 @@ class ScreenDisplayViewController: UIViewController {
     
     }
     
-    override var shouldAutorotate: Bool {
-        return true
+    @IBAction func closeAction(_ sender: Any) {
+        print("Cerrando view")
+        NotificationCenter.default.removeObserver(observerRotate)
+        navigationController?.popViewController(animated: true)
     }
-
-    @objc func swipedUp(){
-        //print("swipedUp")
+    
+    @IBAction func tapScreen(_ sender: UITapGestureRecognizer) {
+        let point = sender.location(in: imageScreen)
+        print(point)
+        presenter?.updatePointByDevice(idDevice: deviceId ?? "", x: Int(point.x), y: Int(point.y), success: {
+            
+        }, failure: {
+            
+        })
     }
     
 }
 
+
 extension ScreenDisplayViewController: PresenterToViewScreenDisplayProtocol{
-    
 }

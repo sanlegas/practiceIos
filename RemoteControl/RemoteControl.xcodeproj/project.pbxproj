@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		7F01855E285BD67100915CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F01855D285BD67100915CD8 /* AppDelegate.swift */; };
 		7F018560285BD67100915CD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F01855F285BD67100915CD8 /* SceneDelegate.swift */; };
-		7F018562285BD67100915CD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F018561285BD67100915CD8 /* ViewController.swift */; };
-		7F018565285BD67100915CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F018563285BD67100915CD8 /* Main.storyboard */; };
 		7F018567285BD67200915CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F018566285BD67200915CD8 /* Assets.xcassets */; };
 		7F01856A285BD67200915CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F018568285BD67200915CD8 /* LaunchScreen.storyboard */; };
 		7F01857A285BE4A600915CD8 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F018574285BE4A600915CD8 /* LoginPresenter.swift */; };
@@ -68,8 +66,6 @@
 		7F01855A285BD67100915CD8 /* RemoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F01855D285BD67100915CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F01855F285BD67100915CD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F018561285BD67100915CD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7F018564285BD67100915CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F018566285BD67200915CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F018569285BD67200915CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F01856B285BD67200915CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "RemoteControl/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -184,8 +180,6 @@
 				7F27278228616CB200B7A294 /* Resources */,
 				7F27278128616C9900B7A294 /* Supporting Files */,
 				7F01858F285C16B600915CD8 /* Auth */,
-				7F018561285BD67100915CD8 /* ViewController.swift */,
-				7F018563285BD67100915CD8 /* Main.storyboard */,
 			);
 			path = RemoteControl;
 			sourceTree = "<group>";
@@ -448,7 +442,6 @@
 				7F01856A285BD67200915CD8 /* LaunchScreen.storyboard in Resources */,
 				7F018581285BE5CC00915CD8 /* GoogleService-Info.plist in Resources */,
 				7F018567285BD67200915CD8 /* Assets.xcassets in Resources */,
-				7F018565285BD67100915CD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +528,6 @@
 				7F01857A285BE4A600915CD8 /* LoginPresenter.swift in Sources */,
 				7FC0302E287CF7F800345003 /* ScreenDisplayProtocols.swift in Sources */,
 				7F27278B2861978900B7A294 /* DevicesRouter.swift in Sources */,
-				7F018562285BD67100915CD8 /* ViewController.swift in Sources */,
 				7F27278E2861978900B7A294 /* DevicesInteractor.swift in Sources */,
 				7F8157C4286A7E5E00E3DD50 /* RouterUtil.swift in Sources */,
 				7F27277A286131D800B7A294 /* registerInteractor.swift in Sources */,
@@ -582,14 +574,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7F018563285BD67100915CD8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F018564285BD67100915CD8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7F018568285BD67200915CD8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -731,7 +715,6 @@
 				INFOPLIST_FILE = "RemoteControl/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -760,7 +743,6 @@
 				INFOPLIST_FILE = "RemoteControl/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -23,11 +23,29 @@ class FirebaseClient{
         storageRef = Storage.storage().reference()
     }
 
+    func updatePointByDevice(idDevice: String,
+                                                 x: Int,
+                                                 y: Int,
+                                                success: @escaping() -> (),
+                                                failure: @escaping() -> ()){
+        self.ref.collection("devices").document(idDevice)
+            .setData(["point": ["x": x,"y":y]], merge: true) {
+                err in
+                if let err = err {
+                    print("Error al actualizar las coordenadas")
+                    failure()
+                }else{
+                    print("coordenadas actualizadas correctamente")
+                    success()
+                }
+        }
+    }
+    
     func getScreenFromIdDevice(idDevice:String,
                                success: @escaping(_ screen: Data) -> () ,
                                failure: @escaping() -> ()
     ){
-        let pathReference = storageRef.child( "\(idDevice).png")
+        let pathReference = storageRef.child( "\(idDevice).jpg")
         pathReference.getData(maxSize: 3 * 1024 * 1024) { data, error in
             if let error = error {
                 print("Hubo un error", error)
@@ -42,7 +60,6 @@ class FirebaseClient{
                     password:String ,
                     success: @escaping() -> () ,
                     failure: @escaping() -> ()){
-        
         Auth.auth().signIn(withEmail: user, password: password) { [weak self] authResult, error in
             if let error = error {
                 failure()
@@ -55,9 +72,7 @@ class FirebaseClient{
     func getDeviceById( id:String ,
                         success: @escaping (_ device: Device) -> () ,
                         failure: @escaping () -> ()) {
-        
         let docRef = ref.collection("devices").document(id)
-
         docRef.getDocument(as: Device.self) { (result) in
             switch result {
             case .success(let device):
@@ -66,25 +81,22 @@ class FirebaseClient{
                 failure()
             }
         }
-
     }
     
     func getDevicesByCurrentUser(
                           success: @escaping (_ devices: [Device]) -> (),
                           failure: @escaping () -> ()) {
-                              
-                              var currentUser:String?
-                              if Auth.auth().currentUser?.uid != nil {
-                                  currentUser = Auth.auth().currentUser?.uid
-                                  getDevicesByUser(user: currentUser!) { devices in
-                                      success(devices)
-                                  } failure: {
-                                      failure()
-                                  }
-                          }else{
-                                 failure()
-                          }
-                              
+                          var currentUser:String?
+                          if Auth.auth().currentUser?.uid != nil {
+                              currentUser = Auth.auth().currentUser?.uid
+                              getDevicesByUser(user: currentUser!) { devices in
+                                  success(devices)
+                              } failure: {
+                                  failure()
+                              }
+                      }else{
+                             failure()
+                      }
     }
     
     func getDevicesByUser(user: String,
@@ -120,18 +132,14 @@ class FirebaseClient{
                     failure()
                 }
         }
-
     }
     
     func handleScreenDevice(deviceId: String,
                             lastUpdated: Any,
                             success: @escaping (_ screenCapture: Data) -> (),
                             failure: @escaping () -> ()){
-       
-        let timeDate    = Timestamp()
-        
         ref!.collection("devices").document(deviceId)
-            .parent.whereField("lastUpdate", isGreaterThanOrEqualTo: timeDate)
+            .parent.whereField("lastUpdate", isGreaterThanOrEqualTo: Timestamp())
             .addSnapshotListener { documentSnapshot, error in
                 print("posibles cambios en el screen \(deviceId) \(lastUpdated)")
                 guard let snapshot = documentSnapshot else {

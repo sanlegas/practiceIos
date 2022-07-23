@@ -1,20 +1,19 @@
 //
 //  Device.swift
-//  RemoteControl
+//  RemoteControlServer
 //
-//  Created by ISAAC DAVID SANTIAGO on 22/06/22.
+//  Created by ISAAC DAVID SANTIAGO on 18/07/22.
 //
 
-import FirebaseFirestoreSwift
 import Foundation
 import FirebaseFirestore
 
-public struct Device : Codable {
+public struct Device : Codable, Hashable, Identifiable {
     @DocumentID var uid:String?
     var name:String?
     var online:Bool?
     var lastUpdate: Timestamp?
-    var point: Point
+    //var point: Point
 
     
 }

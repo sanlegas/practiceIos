@@ -19,6 +19,11 @@ protocol ViewToPresenterScreenDisplayProtocol: class {
                                success: @escaping(_ screen: Data) -> () ,
                                failure: @escaping() -> ())
     func handleScreenDevice(deviceId: String, lastUpdated: Any, success: @escaping (Data) -> (), failure: @escaping () -> ())
+    func updatePointByDevice(idDevice: String,
+                                                x: Int,
+                                                y: Int,
+                                                success: @escaping() -> (),
+                                                failure: @escaping() -> ())
 }
 //MARK: Presenter -
 protocol PresenterToViewScreenDisplayProtocol: class {
@@ -43,6 +48,9 @@ protocol PresenterToInteractorScreenDisplayProtocol: class {
                             lastUpdated: Any,
                             success: @escaping (_ screenCapture: Data) -> (),
                             failure: @escaping () -> ())
+    
+    func updatePointByDevice(idDevice: String, x: Int, y: Int, success: @escaping () -> (), failure: @escaping () -> ())
+    
 }
 
 //MARK: View -

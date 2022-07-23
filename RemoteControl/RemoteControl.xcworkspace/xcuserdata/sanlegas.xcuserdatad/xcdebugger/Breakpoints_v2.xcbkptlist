@@ -7,684 +7,80 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "89A004C0-92FE-495A-9685-AB866ACC6982"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/UnitTest/DevicesTest.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "testExample()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3C907498-676D-44F6-9CD0-D17AD0855569"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControlTests/DevicesTest.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "testDevicesByUser()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3C907498-676D-44F6-9CD0-D17AD0855569 - cc3db0c99bce782c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;RemoteControl.Device&gt;) -&gt; () in RemoteControlTests.DevicesTest.testExample() -&gt; ()"
-                  moduleName = "RemoteControlTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/practiceIos/RemoteControl/RemoteControlTests/DevicesTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "3C907498-676D-44F6-9CD0-D17AD0855569 - 9c516fda9cb1db9f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;RemoteControl.Device&gt;) -&gt; () in RemoteControlTests.DevicesTest.testDevicesByUser() -&gt; ()"
-                  moduleName = "RemoteControlTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/practiceIos/RemoteControl/RemoteControlTests/DevicesTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "3C907498-676D-44F6-9CD0-D17AD0855569 - 9c516fda9cb1d859"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;RemoteControl.Device&gt;) -&gt; () in RemoteControlTests.DevicesTest.testDevicesByUser() -&gt; ()"
-                  moduleName = "RemoteControlTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/practiceIos/RemoteControl/RemoteControlTests/DevicesTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  uuid = "3C907498-676D-44F6-9CD0-D17AD0855569 - 9c516fda9cb1d649"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;RemoteControl.Device&gt;) -&gt; () in RemoteControlTests.DevicesTest.testDevicesByUser() -&gt; ()"
-                  moduleName = "RemoteControlTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/practiceIos/RemoteControl/RemoteControlTests/DevicesTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "76">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2886E3F3-8B95-403E-8ACB-3E754DF99A0D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControlTests/DevicesTest.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "testDevicesByUser()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2886E3F3-8B95-403E-8ACB-3E754DF99A0D - fd26da4d0a75d07b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RemoteControlTests.DevicesTest.testDevicesByUser() -&gt; ()"
-                  moduleName = "RemoteControlTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/practiceIos/RemoteControl/RemoteControlTests/DevicesTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "2886E3F3-8B95-403E-8ACB-3E754DF99A0D - fd26da4d0a75d07b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RemoteControlTests.DevicesTest.testDevicesByUser() -&gt; ()"
-                  moduleName = "RemoteControlTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/practiceIos/RemoteControl/RemoteControlTests/DevicesTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "84">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "13E1E0F3-42BC-4C40-9227-CBF6B5B63BD0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControlTests/DevicesTest.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "testDevicesByUser()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "13E1E0F3-42BC-4C40-9227-CBF6B5B63BD0 - 40aa67bf55e1e1b2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in RemoteControlTests.DevicesTest.testDevicesByUser() -&gt; ()"
-                  moduleName = "RemoteControlTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/practiceIos/RemoteControl/RemoteControlTests/DevicesTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  uuid = "13E1E0F3-42BC-4C40-9227-CBF6B5B63BD0 - 40aa67bf55e1e14d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in RemoteControlTests.DevicesTest.testDevicesByUser() -&gt; ()"
-                  moduleName = "RemoteControlTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/practiceIos/RemoteControl/RemoteControlTests/DevicesTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2FCA734B-6C68-4D85-ACAB-C788008D9003"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControlTests/DevicesTest.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "testDevicesByUser()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "756EC22D-D245-4AB3-8AD3-F6C0AE4A8278"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Modules/Devices/devicesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "cerrarSesiom(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "997926CC-42A3-4E27-98A7-7B5988A2A5AF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Modules/Devices/devicesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "cerrarSesiom(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "843731D1-2533-41C4-BFFA-ADA410CFCE31"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Modules/Login/loginViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "showMessageError()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "11BCBB28-6584-49F7-8074-47F00B031DE8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Modules/Login/LoginPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DC85A762-17A2-4BE3-9054-864782EF20D7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Managers/FirebaseClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "login(user:password:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7F2C8CE1-A00D-420F-BA5B-82BF8DE92B0E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Managers/FirebaseClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "login(user:password:success:failure:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7F2C8CE1-A00D-420F-BA5B-82BF8DE92B0E - 8ec42dbd0acaae36"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in RemoteControl.FirebaseClient.login(user: Swift.String, password: Swift.String, success: () -&gt; (), failure: () -&gt; ()) -&gt; ()"
-                  moduleName = "RemoteControl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/practiceIos/RemoteControl/RemoteControl/Classes/Managers/FirebaseClient.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "96">
-               </Location>
-               <Location
-                  uuid = "7F2C8CE1-A00D-420F-BA5B-82BF8DE92B0E - 8ec42dbd0acaae36"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in RemoteControl.FirebaseClient.login(user: Swift.String, password: Swift.String, success: () -&gt; (), failure: () -&gt; ()) -&gt; ()"
-                  moduleName = "RemoteControl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/practiceIos/RemoteControl/RemoteControl/Classes/Managers/FirebaseClient.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "124">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "288F0214-E190-45AE-AD7C-EE58ECA51F8E"
+            uuid = "A1D60BA4-CBF3-4AC1-85C1-DEC6DA7A7047"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RemoteControl/Classes/Modules/Devices/DevicesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "leeRealTime()"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "288F0214-E190-45AE-AD7C-EE58ECA51F8E - 27c55812577d9fe6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in RemoteControl.DevicesViewController.leeRealTime() -&gt; ()"
-                  moduleName = "RemoteControl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/practiceIos/RemoteControl/RemoteControl/Classes/Modules/Devices/DevicesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "312">
-               </Location>
-               <Location
-                  uuid = "288F0214-E190-45AE-AD7C-EE58ECA51F8E - 27c55812577d9fe6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in RemoteControl.DevicesViewController.leeRealTime() -&gt; ()"
-                  moduleName = "RemoteControl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/practiceIos/RemoteControl/RemoteControl/Classes/Modules/Devices/DevicesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "376">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A858BCB4-B86E-44F8-8D77-6D81B5C89F09"
+            uuid = "893011C2-9C1A-4D9E-9046-D3D084425E27"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RemoteControlTests/DevicesTest.swift"
+            filePath = "RemoteControl/Classes/Modules/Devices/DevicesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "testDeviceById()"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "595BAE03-1C5E-4738-97CF-37B4074A704E"
+            uuid = "CA88AEB4-ED33-41D5-AAF9-E20296AB9581"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RemoteControlTests/DevicesTest.swift"
+            filePath = "RemoteControl/Classes/Modules/ScreenDisplay/ScreenDisplayViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "testDeviceById()"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1865E084-7CDE-4E3A-AA49-99FF521874F8"
-            shouldBeEnabled = "No"
+            uuid = "A9DE21F7-9E1A-454F-9162-93FA9F580F05"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Managers/FirebaseClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "getDevicesByUser(user:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CC767150-31CA-4F91-9F48-02C7F16819B4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Managers/FirebaseClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "getDeviceById(id:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "17034108-DD13-4C02-94FE-8521C25671F5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Managers/FirebaseClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "getDeviceById(id:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E6EBE14E-CD85-43EE-B49A-1A1B8E1BDEA4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Managers/FirebaseClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "getDeviceById(id:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "20300FBD-8C93-4E1A-90E9-4E9D5882FB8B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Managers/FirebaseClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "getDevicesByUser(user:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1923493A-2B49-4056-9165-677B1A86CD5F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Managers/FirebaseClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "getDevicesByUser(user:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A3A8470D-64B4-49EA-ACE2-8B39944B44EB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Modules/Devices/DevicesRouter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "redirecScreenView(on:with:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "20705992-9346-486A-92A4-BC00A66033FF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Modules/Login/LoginRouter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "redirecDevicesView(on:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0EA53617-B28E-47DA-99AF-8A94BDE06487"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Managers/FirebaseClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "getDeviceById(id:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7E1F3B1A-CAEE-45DE-9800-5C8A67A1CD2F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControlTests/DevicesTest.swift"
+            filePath = "RemoteControl/Classes/Modules/ScreenDisplay/ScreenDisplayViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
             endingLineNumber = "48"
-            landmarkName = "testScreenByDevice()"
+            landmarkName = "rotated()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "484F814D-9DB3-40F7-A09F-B617DC69C1FB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControlTests/DevicesTest.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "testScreenByDevice()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D7217E94-743C-4D02-8482-213A80497B0C"
+            uuid = "52A70EAD-BD17-45C4-98CF-EC704674648F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Managers/FirebaseClient.swift"
+            filePath = "RemoteControl/Classes/Modules/Devices/DevicesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "handleScreenDevice(deviceId:lastUpdated:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BC446ED9-6968-4338-A794-0EFAB981E18D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Modules/ScreenDisplay/ScreenDisplayViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A1A51F6D-00A2-4F91-ADA9-DC3FD0E3C307"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Modules/ScreenDisplay/ScreenDisplayViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8FCDD8F2-2E44-488C-BDA0-D70D39937B26"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Managers/FirebaseClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "handleScreenDevice(deviceId:lastUpdated:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0C2474E4-6D44-4F18-A9F7-5114241B05AC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControl/Classes/Modules/ScreenDisplay/ScreenDisplayViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B54D28D3-21AE-46C5-8D22-120513F18BB0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RemoteControlTests/DevicesTest.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "testDeviceById()"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "rotated()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

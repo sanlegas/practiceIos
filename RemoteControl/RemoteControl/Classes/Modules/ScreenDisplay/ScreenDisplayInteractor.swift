@@ -27,6 +27,17 @@ class ScreenDisplayInteractor: PresenterToInteractorScreenDisplayProtocol {
 
     }
     
+    func updatePointByDevice(idDevice: String, x: Int, y: Int, success: @escaping () -> (), failure: @escaping () -> ()){
+        firebaseClient.updatePointByDevice(idDevice: idDevice,
+                                           x: x,
+                                           y: y) {
+            success()
+        } failure: {
+            failure()
+        }
+
+    }
+    
     
     func handleScreenDevice(deviceId: String, lastUpdated: Any, success: @escaping (Data) -> (), failure: @escaping () -> ()) {
         firebaseClient.handleScreenDevice(deviceId: deviceId, lastUpdated: lastUpdated) { screenCapture in

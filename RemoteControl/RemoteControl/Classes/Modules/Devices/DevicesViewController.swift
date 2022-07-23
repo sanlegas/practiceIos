@@ -16,10 +16,13 @@ class DevicesViewController: UIViewController {
     var ref : Firestore?
     var presenter: ViewToPresenterDevicesProtocol?
     @IBOutlet weak var tableDevicesView: UITableView!
-    
+    var observerRotate: Any?
     var devices: [Device]?
     
     override func viewDidAppear(_ animated: Bool) {
+        //let value = UIInterfaceOrientation.portrait.rawValue
+        //UIDevice.current.setValue(value, forKey: "orientation")
+        
         presenter?.getDevicesByCurrentUser(success: { devices in
             self.devices = devices
             print( self.devices)
@@ -30,13 +33,24 @@ class DevicesViewController: UIViewController {
         })
     }
     
+    
+    @objc func rotated() {
+        if UIDevice.current.orientation.isLandscape {
+            print("Portrait")
+            let value = UIInterfaceOrientation.portrait.rawValue
+            UIDevice.current.setValue(value, forKey: "orientation")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         ref = Firestore.firestore()
         tableDevicesView.dataSource = self
         tableDevicesView.delegate = self
         tableDevicesView.register( UINib(nibName: "MyCustomCell", bundle: nil),
                             forCellReuseIdentifier: "myCustomCell")
+        observerRotate = NotificationCenter.default.addObserver(self, selector: #selector(self.rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
     }
     
     func showMessage(_title: String,_ message: String){
@@ -104,6 +118,7 @@ extension DevicesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("selected: \(indexPath.row)")
+        NotificationCenter.default.removeObserver(observerRotate)
         presenter?.redirectScrenDisplay(with: devices![indexPath.row])
     }
 }
