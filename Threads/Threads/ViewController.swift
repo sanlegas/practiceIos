@@ -23,6 +23,10 @@ class ViewController: UIViewController {
         //let concurrentSyncQueue = ConcurrentSync()
     }
 
-
+    
+    @IBAction func buttonClick(_ sender: Any) {
+        print("user has press the button")
+    }
+    
 }
 

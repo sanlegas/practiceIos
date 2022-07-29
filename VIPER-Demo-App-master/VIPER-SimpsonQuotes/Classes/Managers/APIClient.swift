@@ -15,7 +15,10 @@ class APIClient {
     
     var baseURL: URL?
     
-    static let shared = { APIClient(baseUrl: APIManager.shared.baseURL) }()
+    static let shared = {
+        APIClient(baseUrl: APIManager.shared.baseURL)
+        
+    }()
     
     required init(baseUrl: String){
         self.baseURL = URL(string: baseUrl)

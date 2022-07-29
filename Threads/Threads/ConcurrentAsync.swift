@@ -14,11 +14,16 @@ class ConcurrentAsync {
         print("1st statment of concurrent queue")
         print("2nd statment of concurrent queue")
         
-        concurrentQueue.async {
+        DispatchQueue.global(qos: .background).async {
+            
             for i in 0...5{
-                print("concurrent queue sync statment \(i)")
+                DispatchQueue.main.async(execute: {
+                    sleep(4)
+                    print("concurrent queue async statment \(i)")
+                })
             }
         }
+        
         
         print("end of concurrent queue code")
     }
