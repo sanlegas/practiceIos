@@ -7,47 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4C88D0FA-FD24-497B-B534-EE84DDF6EF4E"
+            uuid = "87A370CC-AA1D-4043-A136-3764196A90A9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyPromos/Managers/NavigationController.swift"
+            filePath = "MyPromos/Modules/Register/RegisterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "login(_:_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3E98C2FE-0984-48F6-A434-0FFAFD64E5CE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyPromos/Managers/NavigationController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "login(_:_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "99421537-1423-45A4-955C-C0F2F17450FE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyPromos/Managers/NavigationController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "webView(_:didFinish:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -55,79 +23,63 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5084CA22-E50B-4E91-8AE3-7EF592BA52B3"
+            uuid = "A7A39D3C-2E65-4F0E-8116-BA037CC3686E"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyPromos/Managers/NavigationController.swift"
+            filePath = "MyPromos/Modules/Register/RegisterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "initialice()"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "takeScreenShot()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "28AED240-24F5-4A87-BEDE-BF7BC88DB5A9"
-            shouldBeEnabled = "No"
+            uuid = "FD711E14-45EA-4405-8323-7E529D60EF44"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyPromos/Modules/Login/LoginViewController.swift"
+            filePath = "MyPromos/Modules/Register/RegisterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "webView(_:didFinish:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4A4B12D1-F45B-4350-BFB3-FD078A9592C3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyPromos/Modules/Login/LoginViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
             landmarkName = "takeScreenShot()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "4A4B12D1-F45B-4350-BFB3-FD078A9592C3 - a40bf9fdf07aa7ba"
+                  uuid = "FD711E14-45EA-4405-8323-7E529D60EF44 - 8045cc4ab55d398c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyPromos.LoginViewController.takeScreenShot() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyPromos.RegisterViewController.takeScreenShot() -&gt; ()"
                   moduleName = "MyPromos"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/myPromos/MyPromos/MyPromos/Modules/Login/LoginViewController.swift"
+                  urlString = "file:///Users/sanlegas/Documents/proyectos/swift/practice/myPromos/MyPromos/MyPromos/Modules/Register/RegisterViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "52">
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "83">
                </Location>
                <Location
-                  uuid = "4A4B12D1-F45B-4350-BFB3-FD078A9592C3 - a40bf9fdf07aa7ba"
+                  uuid = "FD711E14-45EA-4405-8323-7E529D60EF44 - 8045cc4ab55d398c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyPromos.LoginViewController.takeScreenShot() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyPromos.RegisterViewController.takeScreenShot() -&gt; ()"
                   moduleName = "MyPromos"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/myPromos/MyPromos/MyPromos/Modules/Login/LoginViewController.swift"
+                  urlString = "file:///Users/sanlegas/Documents/proyectos/swift/practice/myPromos/MyPromos/MyPromos/Modules/Register/RegisterViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "80">
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "109">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -135,63 +87,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "30A4DCB2-023C-42F2-BE1C-E81D029A97D6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyPromos/Modules/Login/LoginViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "takeScreenShot()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B040B8A9-8503-4C06-886F-C815732F72AC"
+            uuid = "BE40AEA7-B915-4233-B3F0-07771BF4B90C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyPromos/Modules/Register/RegisterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "takeScreenShot()"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "webView(_:didFinish:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "71F81EFC-D7A2-4AFB-BD34-133BA61452AE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPromos/Modules/Register/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "webView(_:didFinish:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A36DA851-8217-4F52-8293-1665681477F7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPromos/Modules/Register/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "webView(_:didFinish:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "B040B8A9-8503-4C06-886F-C815732F72AC - 26f62609fe4584a0"
+                  uuid = "A36DA851-8217-4F52-8293-1665681477F7 - f4e731038cd19334"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyPromos.RegisterViewController.takeScreenShot() -&gt; ()"
+                  symbolName = "MyPromos.RegisterViewController.webView(_: __C.WKWebView, didFinish: Swift.Optional&lt;__C.WKNavigation&gt;) -&gt; ()"
                   moduleName = "MyPromos"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/myPromos/MyPromos/MyPromos/Modules/Register/RegisterViewController.swift"
+                  urlString = "file:///Users/sanlegas/Documents/proyectos/swift/practice/myPromos/MyPromos/MyPromos/Modules/Register/RegisterViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "103"
-                  endingLineNumber = "103"
-                  offsetFromSymbolStart = "52">
+                  startingLineNumber = "139"
+                  endingLineNumber = "139"
+                  offsetFromSymbolStart = "3508">
                </Location>
                <Location
-                  uuid = "B040B8A9-8503-4C06-886F-C815732F72AC - 26f62609fe4584a0"
+                  uuid = "A36DA851-8217-4F52-8293-1665681477F7 - f4e731038cd19334"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyPromos.RegisterViewController.takeScreenShot() -&gt; ()"
+                  symbolName = "MyPromos.RegisterViewController.webView(_: __C.WKWebView, didFinish: Swift.Optional&lt;__C.WKNavigation&gt;) -&gt; ()"
                   moduleName = "MyPromos"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sanlegas/Documents/proyectos/personales/ios/myPromos/MyPromos/MyPromos/Modules/Register/RegisterViewController.swift"
+                  urlString = "file:///Users/sanlegas/Documents/proyectos/swift/practice/myPromos/MyPromos/MyPromos/Modules/Register/RegisterViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "103"
-                  endingLineNumber = "103"
-                  offsetFromSymbolStart = "80">
+                  startingLineNumber = "139"
+                  endingLineNumber = "139"
+                  offsetFromSymbolStart = "3561">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -199,79 +167,31 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5186278F-9458-4C15-87E9-28C3FC5A7ABE"
+            uuid = "ED92B74D-DF4E-49C4-BA52-6E134D474882"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyPromos/Modules/Register/RegisterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "webView(_:didFinish:)"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "contains(find:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C36FCC18-AE26-4389-A842-1556F40F1371"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyPromos/Modules/Register/RegisterViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "webView(_:didFinish:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3B4379DE-7EA9-451A-99AC-0663464E158E"
+            uuid = "26CE5A75-F3DE-4AC2-BDBA-5C6EA5C04093"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyPromos/Modules/Register/RegisterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "webView(_:didFinish:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "36FC4076-6D65-4971-B952-4B976E18C7FA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyPromos/Modules/Register/RegisterViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "webView(_:didFinish:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "44919F94-F0FC-48C2-BF66-CA074A9D452C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyPromos/Modules/Register/RegisterViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "webView(_:didFinish:)"
             landmarkType = "7">
          </BreakpointContent>
