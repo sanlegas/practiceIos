@@ -21,6 +21,8 @@ protocol ViewToPresenterRegisterProtocol {
     var view: PresenterToViewRegisterProtocol? { get set }
     var interactor: PresenterToInteractorRegisterProtocol? { get set }
     var router: PresenterToRouterRegisterProtocol? { get set }
+    
+    func redirectToMain()
 }
 
 
@@ -39,5 +41,5 @@ protocol InteractorToPresenterRegisterProtocol {
 
 // MARK: Router Input (Presenter -> Router)
 protocol PresenterToRouterRegisterProtocol {
-    
+    func redirectToMain(on view: PresenterToViewRegisterProtocol)
 }

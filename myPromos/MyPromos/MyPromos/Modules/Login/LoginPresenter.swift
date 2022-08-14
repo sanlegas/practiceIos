@@ -23,6 +23,9 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
         router?.redirectToRecover(on: view!)
     }
     
+    func redirectToMain() {
+        router?.redirectToMain(on: view!)
+    }
 }
 
 extension LoginPresenter: InteractorToPresenterLoginProtocol {

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>130664937456-6ke7b6bucq21iuj9voot8g09br836v9g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.130664937456-6ke7b6bucq21iuj9voot8g09br836v9g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCKB997DJseCfGCNou_Dw2SYABY83tPTF0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>130664937456</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sanlegas.Contranalisis</string>
+	<key>PROJECT_ID</key>
+	<string>contranalisisapp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>contranalisisapp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:130664937456:ios:52129139c7484f62484f35</string>
+</dict>
+</plist>

@@ -14,6 +14,10 @@ class RegisterPresenter: ViewToPresenterRegisterProtocol {
     var view: PresenterToViewRegisterProtocol?
     var interactor: PresenterToInteractorRegisterProtocol?
     var router: PresenterToRouterRegisterProtocol?
+    
+    func redirectToMain() {
+        router?.redirectToMain(on: view!)
+    }
 }
 
 extension RegisterPresenter: InteractorToPresenterRegisterProtocol {

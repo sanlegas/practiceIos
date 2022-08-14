@@ -18,6 +18,12 @@ class RecoverViewController: UIViewController {
     // MARK: - Properties
     var presenter: ViewToPresenterRecoverProtocol?
     
+    
+    func recoverCuenta(){
+        let scriptEmail = "document.querySelector('#emailrest')"
+        let scriptButton = "document.querySelector('#forgot > div > div > div.modal-body > table > tbody > tr > td:nth-child(3) > button')"
+        
+    }
 }
 
 extension RecoverViewController: PresenterToViewRecoverProtocol{

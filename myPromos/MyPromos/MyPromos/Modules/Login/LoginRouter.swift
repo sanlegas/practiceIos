@@ -32,13 +32,21 @@ class LoginRouter: PresenterToRouterLoginProtocol {
     func redirectToRegister(on view: PresenterToViewLoginProtocol){
         let registerModule = RegisterRouter.createModule()
         let vc = view as! LoginViewController
-        vc.navigationController?.pushViewController(registerModule, animated: true)
+        //vc.navigationController?.navigationController(registerModule, animated: true)
+        //vc.navigationController?.setViewControllers([registerModule], animated: true)
+        vc.navigationController?.show(registerModule, sender: vc)
     }
     
     func redirectToRecover(on view: PresenterToViewLoginProtocol){
         let recoverModule = RecoverRouter.createModule()
         let vc = view as! LoginViewController
         vc.navigationController?.pushViewController(recoverModule, animated: true)
+    }
+    
+    func redirectToMain(on view: PresenterToViewLoginProtocol){
+        let mainModule = MainRouter.createModule()
+        let vc = view as! LoginViewController
+        vc.navigationController?.setViewControllers([mainModule], animated: true)
     }
     
 }

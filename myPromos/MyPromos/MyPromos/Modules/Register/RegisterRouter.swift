@@ -27,4 +27,10 @@ class RegisterRouter: PresenterToRouterRegisterProtocol {
         return viewController
     }
     
+    func redirectToMain(on view: PresenterToViewRegisterProtocol){
+        let mainModule = MainRouter.createModule()
+        let vc = view as! RegisterViewController
+        vc.navigationController?.setViewControllers([mainModule], animated: true)
+    }
+    
 }

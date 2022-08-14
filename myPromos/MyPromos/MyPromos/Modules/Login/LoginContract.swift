@@ -24,6 +24,7 @@ protocol ViewToPresenterLoginProtocol {
     
     func redirectToRegister()
     func redirectToRecover()
+    func redirectToMain()
 }
 
 
@@ -44,4 +45,5 @@ protocol InteractorToPresenterLoginProtocol {
 protocol PresenterToRouterLoginProtocol {
     func redirectToRegister(on view: PresenterToViewLoginProtocol)
     func redirectToRecover(on view: PresenterToViewLoginProtocol)
+    func redirectToMain(on view: PresenterToViewLoginProtocol)
 }

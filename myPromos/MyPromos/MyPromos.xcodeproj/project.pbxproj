@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F471B6728A3336D00C41D3E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F471B6628A3336D00C41D3E /* CoreDataManager.swift */; };
+		7F518B1428A4E7E30072B153 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F518B1328A4E7E30072B153 /* ViewUtils.swift */; };
+		7F518B1728A58AAC0072B153 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F518B1628A58AAC0072B153 /* GoogleService-Info.plist */; };
+		7F518B1A28A58CD30072B153 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7F518B1928A58CD30072B153 /* FirebaseAnalytics */; };
+		7F518B1C28A58CD30072B153 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7F518B1B28A58CD30072B153 /* FirebaseAnalyticsSwift */; };
+		7F518B1E28A58CD30072B153 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7F518B1D28A58CD30072B153 /* FirebaseCrashlytics */; };
+		7F518B2028A58CD30072B153 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 7F518B1F28A58CD30072B153 /* FirebaseMessaging */; };
 		7FAE26F528911B0100ACA69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE26F428911B0100ACA69C /* AppDelegate.swift */; };
 		7FAE26F728911B0100ACA69C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE26F628911B0100ACA69C /* SceneDelegate.swift */; };
 		7FAE26F928911B0100ACA69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE26F828911B0100ACA69C /* ViewController.swift */; };
-		7FAE26FF28911B0200ACA69C /* MyPromos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE26FD28911B0200ACA69C /* MyPromos.xcdatamodeld */; };
+		7FAE26FF28911B0200ACA69C /* Contranalisis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE26FD28911B0200ACA69C /* Contranalisis.xcdatamodeld */; };
 		7FAE270128911B0200ACA69C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE270028911B0200ACA69C /* Assets.xcassets */; };
 		7FAE270428911B0200ACA69C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE270228911B0200ACA69C /* LaunchScreen.storyboard */; };
 		7FAE271228911BA600ACA69C /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE270D28911BA600ACA69C /* LoginContract.swift */; };
@@ -31,11 +38,20 @@
 		7FAE273A2891F68900ACA69C /* RecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE27352891F68900ACA69C /* RecoverViewController.swift */; };
 		7FAE273B2891F68900ACA69C /* RecoverInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE27362891F68900ACA69C /* RecoverInteractor.swift */; };
 		7FAE27402891F71F00ACA69C /* RecoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE273F2891F71F00ACA69C /* RecoverView.xib */; };
-		7FAE27452893A9B700ACA69C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE27442893A9B700ACA69C /* NavigationController.swift */; };
+		7FB0D06428A30BCA00C7D72C /* MainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0D05F28A30BCA00C7D72C /* MainContract.swift */; };
+		7FB0D06528A30BCA00C7D72C /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0D06028A30BCA00C7D72C /* MainPresenter.swift */; };
+		7FB0D06628A30BCA00C7D72C /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0D06128A30BCA00C7D72C /* MainRouter.swift */; };
+		7FB0D06728A30BCA00C7D72C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0D06228A30BCA00C7D72C /* MainViewController.swift */; };
+		7FB0D06828A30BCA00C7D72C /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0D06328A30BCA00C7D72C /* MainInteractor.swift */; };
+		7FB0D06A28A3201500C7D72C /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FB0D06928A3201500C7D72C /* MainView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7FAE26F128911B0100ACA69C /* MyPromos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPromos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F471B6628A3336D00C41D3E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		7F518B1328A4E7E30072B153 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		7F518B1628A58AAC0072B153 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F6974B628A600BD00BE9A08 /* Contranalisis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contranalisis.entitlements; sourceTree = "<group>"; };
+		7FAE26F128911B0100ACA69C /* Contranalisis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contranalisis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAE26F428911B0100ACA69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FAE26F628911B0100ACA69C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7FAE26F828911B0100ACA69C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +77,12 @@
 		7FAE27352891F68900ACA69C /* RecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverViewController.swift; sourceTree = "<group>"; };
 		7FAE27362891F68900ACA69C /* RecoverInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverInteractor.swift; sourceTree = "<group>"; };
 		7FAE273F2891F71F00ACA69C /* RecoverView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecoverView.xib; sourceTree = "<group>"; };
-		7FAE27442893A9B700ACA69C /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		7FB0D05F28A30BCA00C7D72C /* MainContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContract.swift; sourceTree = "<group>"; };
+		7FB0D06028A30BCA00C7D72C /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		7FB0D06128A30BCA00C7D72C /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		7FB0D06228A30BCA00C7D72C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7FB0D06328A30BCA00C7D72C /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		7FB0D06928A3201500C7D72C /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +90,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F518B2028A58CD30072B153 /* FirebaseMessaging in Frameworks */,
+				7F518B1E28A58CD30072B153 /* FirebaseCrashlytics in Frameworks */,
+				7F518B1C28A58CD30072B153 /* FirebaseAnalyticsSwift in Frameworks */,
+				7F518B1A28A58CD30072B153 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F518B1128A4E7CA0072B153 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7F518B1528A58A990072B153 /* Services */,
+				7F518B1228A4E7D70072B153 /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7F518B1228A4E7D70072B153 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7F518B1328A4E7E30072B153 /* ViewUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7F518B1528A58A990072B153 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7F471B6628A3336D00C41D3E /* CoreDataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		7FAE26E828911B0100ACA69C = {
 			isa = PBXGroup;
 			children = (
+				7F6974B628A600BD00BE9A08 /* Contranalisis.entitlements */,
 				7FAE26F328911B0100ACA69C /* MyPromos */,
 				7FAE26F228911B0100ACA69C /* Products */,
 			);
@@ -86,7 +137,7 @@
 		7FAE26F228911B0100ACA69C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FAE26F128911B0100ACA69C /* MyPromos.app */,
+				7FAE26F128911B0100ACA69C /* Contranalisis.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,7 +145,7 @@
 		7FAE26F328911B0100ACA69C /* MyPromos */ = {
 			isa = PBXGroup;
 			children = (
-				7FAE274128936FE800ACA69C /* Managers */,
+				7F518B1128A4E7CA0072B153 /* Common */,
 				7FAE270B28911B5F00ACA69C /* Modules */,
 				7FAE26F428911B0100ACA69C /* AppDelegate.swift */,
 				7FAE26F628911B0100ACA69C /* SceneDelegate.swift */,
@@ -102,7 +153,8 @@
 				7FAE270028911B0200ACA69C /* Assets.xcassets */,
 				7FAE270228911B0200ACA69C /* LaunchScreen.storyboard */,
 				7FAE270528911B0200ACA69C /* Info.plist */,
-				7FAE26FD28911B0200ACA69C /* MyPromos.xcdatamodeld */,
+				7F518B1628A58AAC0072B153 /* GoogleService-Info.plist */,
+				7FAE26FD28911B0200ACA69C /* Contranalisis.xcdatamodeld */,
 			);
 			path = MyPromos;
 			sourceTree = "<group>";
@@ -110,6 +162,7 @@
 		7FAE270B28911B5F00ACA69C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7FB0D05E28A30BB400C7D72C /* Main */,
 				7FAE273C2891F69200ACA69C /* Recover */,
 				7FAE271728911CC800ACA69C /* Register */,
 				7FAE270C28911B6D00ACA69C /* Login */,
@@ -156,20 +209,25 @@
 			path = Recover;
 			sourceTree = "<group>";
 		};
-		7FAE274128936FE800ACA69C /* Managers */ = {
+		7FB0D05E28A30BB400C7D72C /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				7FAE27442893A9B700ACA69C /* NavigationController.swift */,
+				7FB0D05F28A30BCA00C7D72C /* MainContract.swift */,
+				7FB0D06028A30BCA00C7D72C /* MainPresenter.swift */,
+				7FB0D06128A30BCA00C7D72C /* MainRouter.swift */,
+				7FB0D06228A30BCA00C7D72C /* MainViewController.swift */,
+				7FB0D06328A30BCA00C7D72C /* MainInteractor.swift */,
+				7FB0D06928A3201500C7D72C /* MainView.xib */,
 			);
-			path = Managers;
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7FAE26F028911B0100ACA69C /* MyPromos */ = {
+		7FAE26F028911B0100ACA69C /* Contranalisis */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FAE270828911B0200ACA69C /* Build configuration list for PBXNativeTarget "MyPromos" */;
+			buildConfigurationList = 7FAE270828911B0200ACA69C /* Build configuration list for PBXNativeTarget "Contranalisis" */;
 			buildPhases = (
 				7FAE26ED28911B0100ACA69C /* Sources */,
 				7FAE26EE28911B0100ACA69C /* Frameworks */,
@@ -179,9 +237,15 @@
 			);
 			dependencies = (
 			);
-			name = MyPromos;
+			name = Contranalisis;
+			packageProductDependencies = (
+				7F518B1928A58CD30072B153 /* FirebaseAnalytics */,
+				7F518B1B28A58CD30072B153 /* FirebaseAnalyticsSwift */,
+				7F518B1D28A58CD30072B153 /* FirebaseCrashlytics */,
+				7F518B1F28A58CD30072B153 /* FirebaseMessaging */,
+			);
 			productName = MyPromos;
-			productReference = 7FAE26F128911B0100ACA69C /* MyPromos.app */;
+			productReference = 7FAE26F128911B0100ACA69C /* Contranalisis.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -208,11 +272,14 @@
 				Base,
 			);
 			mainGroup = 7FAE26E828911B0100ACA69C;
+			packageReferences = (
+				7F518B1828A58CD30072B153 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 7FAE26F228911B0100ACA69C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7FAE26F028911B0100ACA69C /* MyPromos */,
+				7FAE26F028911B0100ACA69C /* Contranalisis */,
 			);
 		};
 /* End PBXProject section */
@@ -225,8 +292,10 @@
 				7FAE270428911B0200ACA69C /* LaunchScreen.storyboard in Resources */,
 				7FAE27312891DE3200ACA69C /* RegisterView.xib in Resources */,
 				7FAE270128911B0200ACA69C /* Assets.xcassets in Resources */,
+				7FB0D06A28A3201500C7D72C /* MainView.xib in Resources */,
 				7FAE27252891200800ACA69C /* LoginView.xib in Resources */,
 				7FAE27402891F71F00ACA69C /* RecoverView.xib in Resources */,
+				7F518B1728A58AAC0072B153 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,20 +312,26 @@
 				7FAE26F528911B0100ACA69C /* AppDelegate.swift in Sources */,
 				7FAE27392891F68900ACA69C /* RecoverRouter.swift in Sources */,
 				7FAE273B2891F68900ACA69C /* RecoverInteractor.swift in Sources */,
+				7F471B6728A3336D00C41D3E /* CoreDataManager.swift in Sources */,
 				7FAE273A2891F68900ACA69C /* RecoverViewController.swift in Sources */,
 				7FAE272C2891D96D00ACA69C /* RegisterPresenter.swift in Sources */,
+				7FB0D06828A30BCA00C7D72C /* MainInteractor.swift in Sources */,
 				7FAE26F728911B0100ACA69C /* SceneDelegate.swift in Sources */,
 				7FAE272D2891D96D00ACA69C /* RegisterRouter.swift in Sources */,
 				7FAE27372891F68900ACA69C /* RecoverContract.swift in Sources */,
 				7FAE271528911BA600ACA69C /* LoginViewController.swift in Sources */,
-				7FAE26FF28911B0200ACA69C /* MyPromos.xcdatamodeld in Sources */,
+				7FAE26FF28911B0200ACA69C /* Contranalisis.xcdatamodeld in Sources */,
+				7FB0D06428A30BCA00C7D72C /* MainContract.swift in Sources */,
 				7FAE272B2891D96D00ACA69C /* RegisterContract.swift in Sources */,
+				7FB0D06728A30BCA00C7D72C /* MainViewController.swift in Sources */,
+				7F518B1428A4E7E30072B153 /* ViewUtils.swift in Sources */,
 				7FAE271428911BA600ACA69C /* LoginRouter.swift in Sources */,
 				7FAE272E2891D96D00ACA69C /* RegisterViewController.swift in Sources */,
 				7FAE271228911BA600ACA69C /* LoginContract.swift in Sources */,
-				7FAE27452893A9B700ACA69C /* NavigationController.swift in Sources */,
+				7FB0D06528A30BCA00C7D72C /* MainPresenter.swift in Sources */,
 				7FAE271628911BA600ACA69C /* LoginInteractor.swift in Sources */,
 				7FAE27382891F68900ACA69C /* RecoverPresenter.swift in Sources */,
+				7FB0D06628A30BCA00C7D72C /* MainRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +403,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Contranalisis;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -381,6 +457,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = Contranalisis;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -393,11 +470,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Contranalisis.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 4UYL73L62L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyPromos/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Contranalisis;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -408,8 +488,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanlegas.MyPromos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanlegas.Contranalisis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -421,11 +502,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Contranalisis.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 4UYL73L62L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyPromos/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Contranalisis;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -436,8 +520,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanlegas.MyPromos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanlegas.Contranalisis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,7 +541,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FAE270828911B0200ACA69C /* Build configuration list for PBXNativeTarget "MyPromos" */ = {
+		7FAE270828911B0200ACA69C /* Build configuration list for PBXNativeTarget "Contranalisis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FAE270928911B0200ACA69C /* Debug */,
@@ -467,14 +552,48 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		7F518B1828A58CD30072B153 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F518B1928A58CD30072B153 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F518B1828A58CD30072B153 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		7F518B1B28A58CD30072B153 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F518B1828A58CD30072B153 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		7F518B1D28A58CD30072B153 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F518B1828A58CD30072B153 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		7F518B1F28A58CD30072B153 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F518B1828A58CD30072B153 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
-		7FAE26FD28911B0200ACA69C /* MyPromos.xcdatamodeld */ = {
+		7FAE26FD28911B0200ACA69C /* Contranalisis.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				7FAE26FE28911B0200ACA69C /* MyPromos.xcdatamodel */,
 			);
 			currentVersion = 7FAE26FE28911B0200ACA69C /* MyPromos.xcdatamodel */;
-			path = MyPromos.xcdatamodeld;
+			path = Contranalisis.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

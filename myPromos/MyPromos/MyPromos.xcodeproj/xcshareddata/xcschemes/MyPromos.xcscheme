@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7FAE26F028911B0100ACA69C"
-               BuildableName = "MyPromos.app"
-               BlueprintName = "MyPromos"
+               BuildableName = "Contranalisis.app"
+               BlueprintName = "Contranalisis"
                ReferencedContainer = "container:MyPromos.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7FAE26F028911B0100ACA69C"
-            BuildableName = "MyPromos.app"
-            BlueprintName = "MyPromos"
+            BuildableName = "Contranalisis.app"
+            BlueprintName = "Contranalisis"
             ReferencedContainer = "container:MyPromos.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -69,8 +69,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7FAE26F028911B0100ACA69C"
-            BuildableName = "MyPromos.app"
-            BlueprintName = "MyPromos"
+            BuildableName = "Contranalisis.app"
+            BlueprintName = "Contranalisis"
             ReferencedContainer = "container:MyPromos.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

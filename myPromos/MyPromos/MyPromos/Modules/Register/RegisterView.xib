@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="MyPromos" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Contranalisis" customModuleProvider="target">
             <connections>
+                <outlet property="apellidosText" destination="oMf-tD-2ca" id="0Tv-es-kBR"/>
                 <outlet property="emailText" destination="T1I-2k-3uw" id="OUJ-eu-tzF"/>
                 <outlet property="generoPicker" destination="Va6-lg-Rtp" id="khc-Bl-T3Q"/>
-                <outlet property="messages" destination="Rxb-p7-gz6" id="C2O-Tc-TiE"/>
+                <outlet property="indicatorView" destination="xfc-0E-jgZ" id="3lB-Rd-mPe"/>
+                <outlet property="nacimientoPicker" destination="KsT-oZ-RGJ" id="uEU-Bd-cSE"/>
+                <outlet property="nombresText" destination="imD-OR-bjr" id="ccv-4o-Pjs"/>
                 <outlet property="paisesPicker" destination="rCG-PE-Wy5" id="BGM-O5-4X2"/>
                 <outlet property="passwordText" destination="Hkf-eD-BL3" id="hj8-zK-4Bx"/>
-                <outlet property="userText" destination="Mbz-oB-Qrh" id="Jet-8P-KHs"/>
+                <outlet property="telefonoText" destination="Mbz-oB-Qrh" id="33z-TB-rtZ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="3Oe-Af-F5U"/>
             </connections>
         </placeholder>
@@ -33,12 +36,12 @@
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mbz-oB-Qrh">
                     <rect key="frame" x="20" y="342" width="374" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" textContentType="tel"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hkf-eD-BL3">
                     <rect key="frame" x="20" y="415" width="374" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTRASEÑA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfs-Ep-F2H">
                     <rect key="frame" x="138.5" y="386" width="137" height="24"/>
@@ -55,7 +58,7 @@
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T1I-2k-3uw">
                     <rect key="frame" x="20" y="269" width="374" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" textContentType="email"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOMBRES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKQ-Xc-OvK">
                     <rect key="frame" x="158" y="94" width="98.5" height="24"/>
@@ -66,7 +69,7 @@
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imD-OR-bjr">
                     <rect key="frame" x="20" y="123" width="374" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" textContentType="name"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APELLIDOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZT-gN-pqI">
                     <rect key="frame" x="152.5" y="167" width="109" height="24"/>
@@ -77,7 +80,7 @@
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oMf-tD-2ca">
                     <rect key="frame" x="20" y="196" width="374" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" textContentType="family-name"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAm-kZ-qcP">
                     <rect key="frame" x="20" y="732" width="374" height="40"/>
@@ -116,20 +119,18 @@
                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Va6-lg-Rtp">
                     <rect key="frame" x="47" y="652" width="320" height="60"/>
                 </pickerView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rxb-p7-gz6">
-                    <rect key="frame" x="20" y="44" width="374" height="35"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-0E-jgZ">
+                    <rect key="frame" x="187" y="52" width="40" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="35" id="vDC-95-QYQ"/>
+                        <constraint firstAttribute="height" constant="40" id="9xF-Lt-CiA"/>
+                        <constraint firstAttribute="width" constant="40" id="ak8-dP-eXi"/>
                     </constraints>
-                    <color key="textColor" systemColor="systemPinkColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="xfc-0E-jgZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4e7-2U-uMC"/>
                 <constraint firstItem="Zfs-Ep-F2H" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5VU-lv-msS"/>
                 <constraint firstItem="JKQ-Xc-OvK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7JQ-xk-Cxd"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="imD-OR-bjr" secondAttribute="trailing" constant="20" id="8Nl-7V-tiY"/>
@@ -147,18 +148,16 @@
                 <constraint firstItem="DAm-kZ-qcP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Lw2-Wu-IjB"/>
                 <constraint firstItem="DAm-kZ-qcP" firstAttribute="top" secondItem="Va6-lg-Rtp" secondAttribute="bottom" constant="20" id="Mo9-D9-vq3"/>
                 <constraint firstItem="KsT-oZ-RGJ" firstAttribute="top" secondItem="sE3-ty-Cgs" secondAttribute="bottom" constant="10" id="O0g-PH-PBe"/>
-                <constraint firstItem="Rxb-p7-gz6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="PX2-rs-Jki"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T1I-2k-3uw" secondAttribute="trailing" constant="20" id="QN7-Df-FC8"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Rxb-p7-gz6" secondAttribute="trailing" constant="20" id="QtQ-jV-BXW"/>
                 <constraint firstItem="tdi-D1-Nzg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RTH-K4-9ii"/>
                 <constraint firstItem="eZT-gN-pqI" firstAttribute="top" secondItem="imD-OR-bjr" secondAttribute="bottom" constant="10" id="Ruc-ud-lMb"/>
                 <constraint firstItem="Zfs-Ep-F2H" firstAttribute="top" secondItem="Mbz-oB-Qrh" secondAttribute="bottom" constant="10" id="Rx6-iR-rmU"/>
-                <constraint firstItem="Rxb-p7-gz6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Vhk-Po-DQ6"/>
                 <constraint firstItem="Mbz-oB-Qrh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="WYx-k9-Kq0"/>
                 <constraint firstItem="oMf-tD-2ca" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="WeO-nI-voR"/>
                 <constraint firstItem="DAm-kZ-qcP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Z9j-nL-jTY"/>
                 <constraint firstItem="oMf-tD-2ca" firstAttribute="top" secondItem="eZT-gN-pqI" secondAttribute="bottom" constant="5" id="a0N-bZ-714"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hkf-eD-BL3" secondAttribute="trailing" constant="20" id="aHM-ku-2mn"/>
+                <constraint firstItem="xfc-0E-jgZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="ako-E2-p3P"/>
                 <constraint firstItem="rCG-PE-Wy5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="an7-zz-VXT"/>
                 <constraint firstItem="JKQ-Xc-OvK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="aqI-V0-P3S"/>
                 <constraint firstItem="Va6-lg-Rtp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ar6-BB-JkE"/>
@@ -180,9 +179,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
