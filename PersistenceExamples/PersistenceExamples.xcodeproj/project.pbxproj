@@ -14,6 +14,9 @@
 		7F6974CE28A8BC9C00BE9A08 /* PersistenceExamples.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F6974CC28A8BC9C00BE9A08 /* PersistenceExamples.xcdatamodeld */; };
 		7F6974D028A8BC9D00BE9A08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F6974CF28A8BC9D00BE9A08 /* Assets.xcassets */; };
 		7F6974D328A8BC9D00BE9A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F6974D128A8BC9D00BE9A08 /* LaunchScreen.storyboard */; };
+		7F6974E228A8BE6C00BE9A08 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7F6974E128A8BE6C00BE9A08 /* Realm */; };
+		7F6974E428A8BE6C00BE9A08 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7F6974E328A8BE6C00BE9A08 /* RealmSwift */; };
+		7F6974E628A8CB1C00BE9A08 /* LocalOnlyQsTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6974E528A8CB1C00BE9A08 /* LocalOnlyQsTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,7 @@
 		7F6974CF28A8BC9D00BE9A08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F6974D228A8BC9D00BE9A08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F6974D428A8BC9D00BE9A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F6974E528A8CB1C00BE9A08 /* LocalOnlyQsTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalOnlyQsTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6974E428A8BE6C00BE9A08 /* RealmSwift in Frameworks */,
+				7F6974E228A8BE6C00BE9A08 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 				7F6974D128A8BC9D00BE9A08 /* LaunchScreen.storyboard */,
 				7F6974D428A8BC9D00BE9A08 /* Info.plist */,
 				7F6974CC28A8BC9C00BE9A08 /* PersistenceExamples.xcdatamodeld */,
+				7F6974E528A8CB1C00BE9A08 /* LocalOnlyQsTask.swift */,
 			);
 			path = PersistenceExamples;
 			sourceTree = "<group>";
@@ -86,6 +93,10 @@
 			dependencies = (
 			);
 			name = PersistenceExamples;
+			packageProductDependencies = (
+				7F6974E128A8BE6C00BE9A08 /* Realm */,
+				7F6974E328A8BE6C00BE9A08 /* RealmSwift */,
+			);
 			productName = PersistenceExamples;
 			productReference = 7F6974C028A8BC9C00BE9A08 /* PersistenceExamples.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 7F6974B728A8BC9C00BE9A08;
+			packageReferences = (
+				7F6974E028A8BE6C00BE9A08 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 7F6974C128A8BC9C00BE9A08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F6974CE28A8BC9C00BE9A08 /* PersistenceExamples.xcdatamodeld in Sources */,
+				7F6974E628A8CB1C00BE9A08 /* LocalOnlyQsTask.swift in Sources */,
 				7F6974C828A8BC9C00BE9A08 /* ViewController.swift in Sources */,
 				7F6974C428A8BC9C00BE9A08 /* AppDelegate.swift in Sources */,
 				7F6974C628A8BC9C00BE9A08 /* SceneDelegate.swift in Sources */,
@@ -362,6 +377,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F6974E028A8BE6C00BE9A08 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F6974E128A8BE6C00BE9A08 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F6974E028A8BE6C00BE9A08 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		7F6974E328A8BE6C00BE9A08 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F6974E028A8BE6C00BE9A08 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7F6974CC28A8BC9C00BE9A08 /* PersistenceExamples.xcdatamodeld */ = {
